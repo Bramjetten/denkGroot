@@ -24,6 +24,7 @@ html, body {
     clear: both; }
 
 .row {
+  margin: 40px 0;
   zoom: 1;
   display: block; }
   .row:before, .row:after {
@@ -31,6 +32,9 @@ html, body {
     display: table; }
   .row:after {
     clear: both; }
+  @media screen and (max-width: 480px) {
+    .row {
+      margin: 0; } }
 
 .column {
   padding: 0 10px; }
@@ -87,20 +91,20 @@ html, body {
         margin-right: 0; } }
   .profile img {
     width: 100%; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       .profile img {
         display: block;
         float: left;
-        margin-right: 7.42297%;
-        width: 19.43277%; }
+        margin-right: 3.57866%;
+        width: 22.316%; }
         .profile img:last-child {
           margin-right: 0; } }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .profile .description {
       display: block;
       float: left;
-      margin-right: 7.42297%;
-      width: 73.14426%; }
+      margin-right: 3.57866%;
+      width: 74.10533%; }
       .profile .description:last-child {
         margin-right: 0; } }
   .profile h3 {
@@ -110,7 +114,7 @@ html, body {
     font-weight: normal;
     margin: 12px 0 0 0;
     text-align: center; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       .profile h3 {
         margin: 0;
         text-align: left; } }
@@ -120,7 +124,7 @@ html, body {
     font-family: "Aller-Italic";
     font-size: 15px;
     text-align: center; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       .profile small {
         text-align: left; } }
 

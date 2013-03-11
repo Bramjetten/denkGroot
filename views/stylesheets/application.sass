@@ -20,7 +20,11 @@ html, body
   @include outer-container
 
 .row
+  margin: 40px 0
   @include row(block)
+
+  @include breakpoint($mobile)
+    margin: 0
 
 .column
   padding: 0 10px
@@ -50,12 +54,12 @@ html, body
   img
     width: 100%
 
-    @include breakpoint($mobile)
-      @include span-columns(1)
+    @include breakpoint($tablet)
+      @include span-columns(2)
 
   .description
-    @include breakpoint($mobile)
-      @include span-columns(3)
+    @include breakpoint($tablet)
+      @include span-columns(6)
 
   h3
     color: #0088cc
@@ -65,7 +69,7 @@ html, body
     margin: 12px 0 0 0
     text-align: center
 
-    @include breakpoint($mobile)
+    @include breakpoint($tablet)
       margin: 0
       text-align: left
 
@@ -76,7 +80,7 @@ html, body
     font-size: 15px
     text-align: center
 
-    @include breakpoint($mobile)
+    @include breakpoint($tablet)
       text-align: left
 
 .profile-picture

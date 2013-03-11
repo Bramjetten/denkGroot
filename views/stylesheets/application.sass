@@ -10,8 +10,8 @@ html, body
   min-height: 100%
 
 .page
-  min-height: 100%
-
+  min-height: 120%
+  padding: 50px 0
 
 // Grid
 
@@ -39,7 +39,7 @@ html, body
     @include breakpoint($mobile)
       @include span-columns(4)
 
-// Over ons pagina
+// Over ons
 
 .profile
   @include span-columns(3)
@@ -85,6 +85,39 @@ html, body
 
 .profile-picture
   @include border-radius(50%)
+
+// Diensten
+
+.services
+  background: #222
+
+  h1
+    color: #dcdedd
+    border-color: #4e4e4e
+
+  h2
+    text-align: center
+
+  p
+    color: #a1a1a1
+
+.concept-image
+  height: 114px
+  margin: 0 auto
+  width: 46px
+  @include retina-image("/images/concept", 46px 114px)
+
+.ontwerp-image
+  height: 114px
+  margin: 0 auto
+  width: 114px
+  @include retina-image("/images/ontwerp", 114px 114px)
+
+.realisatie-image
+  height: 114px
+  margin: 0 auto
+  width: 88px
+  @include retina-image("/images/realisatie", 88px 114px)
 
 // Styles
 

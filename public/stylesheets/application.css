@@ -1,0 +1,88 @@
+/*
+Syntax error: Invalid CSS after "...ia screen and (": expected media feature (e.g. min-device-width, color), was "$default-featur..."
+        on line 4 of views/stylesheets/neat/grid/_media.scss
+        from line 18 of views/stylesheets/neat/_neat.scss
+        from line 2 of views/stylesheets/application.sass
+
+1: @mixin media($query:$feature $value $columns, $total-columns: $grid-columns) {
+2: 
+3:   @if length($query) == 1 {
+4:     @media screen and ($default-feature: nth($query, 1)) {
+5:       $default-grid-columns: $grid-columns;
+6:       $grid-columns: $total-columns;
+7:       @content;
+8:       $grid-columns: $default-grid-columns;
+9:     }
+
+Backtrace:
+views/stylesheets/neat/grid/_media.scss:4
+views/stylesheets/neat/_neat.scss:18
+views/stylesheets/application.sass:2
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:1010:in `expected'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:956:in `expected'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:951:in `tok!'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:343:in `media_expr'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:937:in `expr!'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:333:in `media_query'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:308:in `block in media_query_list'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:868:in `str'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:308:in `media_query_list'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:302:in `media_directive'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:153:in `special_directive'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:126:in `directive'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:481:in `block_child'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:470:in `block_contents'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:462:in `block'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:232:in `if_directive'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:153:in `special_directive'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:126:in `directive'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:481:in `block_child'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:470:in `block_contents'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:462:in `block'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:165:in `mixin_directive'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:153:in `special_directive'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:126:in `directive'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:480:in `block_child'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:470:in `block_contents'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:58:in `stylesheet'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/scss/parser.rb:27:in `parse'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/engine.rb:327:in `_to_tree'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/engine.rb:259:in `to_tree'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/perform.rb:144:in `visit_import'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/perform.rb:146:in `block in visit_import'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/perform.rb:146:in `map'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/perform.rb:146:in `visit_import'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/tree/root_node.rb:20:in `render'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/engine.rb:300:in `_render'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/engine.rb:247:in `render'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/plugin/compiler.rb:200:in `each'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/lib/sass/plugin/compiler.rb:298:in `block in watch'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/Users/bram/.rbenv/versions/1.9.3-p385/lib/ruby/gems/1.9.1/gems/sass-3.1.21/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...ia screen and (\": expected media feature (e.g. min-device-width, color), was \"$default-featur...\"\A         on line 4 of views/stylesheets/neat/grid/_media.scss\A         from line 18 of views/stylesheets/neat/_neat.scss\A         from line 2 of views/stylesheets/application.sass\A \A 1: @mixin media($query:$feature $value $columns, $total-columns: $grid-columns) {\A 2: \A 3:   @if length($query) == 1 {\A 4:     @media screen and ($default-feature: nth($query, 1)) {\A 5:       $default-grid-columns: $grid-columns;\A 6:       $grid-columns: $total-columns;\A 7:       @content;\A 8:       $grid-columns: $default-grid-columns;\A 9:     }"; }

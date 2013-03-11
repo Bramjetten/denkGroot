@@ -1,2 +1,139 @@
 @import bourbon/bourbon
 @import neat/neat
+@import normalize.css
+
+$tablet: max-width 768px 8
+$mobile: max-width 480px 4
+
+html, body
+  height: 100%
+  min-height: 100%
+
+.page
+  min-height: 100%
+
+
+// Grid
+
+.container
+  padding: 0 10px
+  @include outer-container
+
+.row
+  @include row(block)
+
+.column
+  padding: 0 10px
+
+  &.four
+    @include span-columns(4)
+
+    @include breakpoint($tablet)
+      @include span-columns(4)
+      @include omega(2n)
+
+    @include breakpoint($mobile)
+      @include span-columns(4)
+
+// Over ons pagina
+
+.profile
+  @include span-columns(3)
+
+  @include breakpoint($tablet)
+    @include span-columns(4)
+    @include omega(2n)
+
+  @include breakpoint($mobile)
+    @include span-columns(4)
+
+  img
+    width: 100%
+
+    @include breakpoint($mobile)
+      @include span-columns(1)
+
+  .description
+    @include breakpoint($mobile)
+      @include span-columns(3)
+
+  h3
+    color: #0088cc
+    font-family: "SkolarWeb-Italic"
+    font-size: 20px
+    font-weight: normal
+    margin: 12px 0 0 0
+    text-align: center
+
+    @include breakpoint($mobile)
+      margin: 0
+      text-align: left
+
+  small
+    color: #666
+    display: block
+    font-family: "Aller-Italic"
+    font-size: 15px
+    text-align: center
+
+    @include breakpoint($mobile)
+      text-align: left
+
+.profile-picture
+  @include border-radius(50%)
+
+// Styles
+
+h1
+  border-bottom: 1px dashed #e5e5e5
+  color: #333
+  font-family: "SkolarBasicLt-Regular"
+  font-size: 48px
+  font-weight: normal
+  line-height: 80px
+
+  @include breakpoint($tablet)
+    font-size: 40px
+    line-height: 60px
+
+  @include breakpoint($mobile)
+    font-size: 32px
+    line-height: 48px
+
+h2
+  color: #01a388
+  font-family: "AllerDisplay-Regular"
+  font-size: 24px
+  font-weight: normal
+  text-transform: uppercase
+
+  @include breakpoint($tablet)
+    font-size: 20px
+
+  @include breakpoint($mobile)
+    font-size: 16px
+
+p
+  color: #666
+  font-family: "Aller-Regular"
+  font-size: 14px
+  line-height: 22px
+
+  strong
+    font-family: "Aller-Bold"
+
+  a
+    color: #0088cc
+    text-decoration: none
+    @include transition (color 0.2s ease-in-out)
+
+  a:hover
+    color: #01a388
+
+::-moz-selection
+  background-color: #333
+  color: #fff
+
+::selection
+  background-color: #333
+  color: #fff

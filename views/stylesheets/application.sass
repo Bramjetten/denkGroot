@@ -82,7 +82,8 @@ nav
       font-family: "AllerDisplay-Regular"
       font-size: 14px
       line-height: 46px
-      margin: 0 20px
+      margin: 0 10px
+      padding: 0 10px
       text-transform: uppercase
 
     li.active a
@@ -111,9 +112,29 @@ nav
   position: relative
   text-align: center
   min-height: 100%
+  z-index: 10
 
   img
     height: 100%
+
+  .get-to-know-us
+    background-position: center 75px
+    background-repeat: no-repeat
+    bottom: 0px
+    display: block
+    font-family: "SkolarWeb-Italic"
+    font-size: 18px
+    line-height: 120px
+    position: absolute
+    text-align: center
+    width: 100%
+
+    @include retina-image("/images/arrow", 21px 25px)
+    @include transition(opacity .2s ease)
+
+    &:hover
+      color: #0088cc
+      opacity: .75
 
 // Over ons
 

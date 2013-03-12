@@ -154,8 +154,7 @@ nav {
   padding: 0;
   position: relative;
   text-align: center;
-  min-height: 100%;
-  z-index: 10; }
+  min-height: 100%; }
   #home img {
     height: 100%; }
   #home .get-to-know-us {

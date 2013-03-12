@@ -8,12 +8,12 @@
 
     %link{rel: 'stylesheet', href: '/stylesheets/application.css'}
 
-  %body
+  %body{data: {spy: "scroll", target: "nav"}}
     %nav
-      %ul
+      %ul.nav
         %a#logo{href: '#home'} denkGroot
 
-        %li.active
+        %li
           %a{href: '#about'} Over ons
         %li
           %a{href: '#services'} Diensten
@@ -41,4 +41,5 @@
 
     %script{src: '/javascripts/jquery.min.js'}
     %script{src: '/javascripts/jquery.easing.js'}
+    %script{src: '/javascripts/jquery.scrollspy.js'}
     %script{src: '/javascripts/application.js'}

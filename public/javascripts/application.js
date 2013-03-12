@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
   
   sniffer();
 
-  $("nav a, .get-to-know-us").bind('click', function(e) {
+  $("nav a, .get-to-know-us, .navlink").bind('click', function(e) {
     $('html,body').stop().animate({
       scrollTop: $($(this).attr('href')).offset().top
     }, 800, "easeInOutExpo");

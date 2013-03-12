@@ -155,12 +155,33 @@ nav {
   position: relative;
   text-align: center;
   min-height: 100%; }
+  #home .introduction {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    width: 100%; }
+    #home .introduction h1 {
+      border: none;
+      color: #dcdfdd;
+      font-family: "SkolarWeb-Italic";
+      font-size: 36px;
+      margin: 0; }
+      @media screen and (max-width: 768px) {
+        #home .introduction h1 {
+          font-size: 32px; } }
+      @media screen and (max-width: 480px) {
+        #home .introduction h1 {
+          font-size: 26px; } }
+  #home #logo_big {
+    height: auto;
+    width: auto; }
   #home img {
     height: 100%; }
   #home .get-to-know-us {
     background-position: center 75px;
     background-repeat: no-repeat;
     bottom: 0px;
+    color: #01a388;
     display: block;
     font-family: "SkolarWeb-Italic";
     font-size: 18px;
@@ -179,7 +200,6 @@ nav {
         background-image: url("/images/arrow@2x.png");
         background-size: 21px 25px; } }
     #home .get-to-know-us:hover {
-      color: #0088cc;
       opacity: 0.75; }
 
 .profile {

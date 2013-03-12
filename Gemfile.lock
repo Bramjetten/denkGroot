@@ -4,10 +4,24 @@ GEM
     bourbon (3.1.1)
       sass (>= 3.2.0)
       thor
+    capistrano (2.14.2)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
     haml (3.1.8)
+    highline (1.6.15)
     neat (1.2.0)
       bourbon (>= 2.1)
       sass (>= 3.2)
+    net-scp (1.1.0)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.6.5)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
     rack (1.5.2)
     rake (10.0.3)
     rb-fsevent (0.9.3)
@@ -25,6 +39,7 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon
+  capistrano
   haml (~> 3.1.4)
   neat
   rake

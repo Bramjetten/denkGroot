@@ -150,6 +150,7 @@ nav {
 
 #home {
   background: black;
+  height: 100%;
   overflow: hidden;
   padding: 0;
   position: relative;
@@ -158,7 +159,7 @@ nav {
   #home .introduction {
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 20%;
     width: 100%; }
     #home .introduction h1 {
       border: none;
@@ -173,8 +174,13 @@ nav {
         #home .introduction h1 {
           font-size: 26px; } }
   #home #logo_big {
-    height: auto;
-    width: auto; }
+    height: 200px;
+    width: 200px;
+    background-image: url("/images/logo_big.png"); }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      #home #logo_big {
+        background-image: url("/images/logo_big@2x.png");
+        background-size: 200px 200px; } }
   #home img {
     height: 100%; }
   #home .get-to-know-us {
@@ -266,7 +272,7 @@ nav {
   #services h1 {
     color: #dcdedd;
     border-color: #4e4e4e; }
-  #services h2 {
+  #services .service h2 {
     text-align: center; }
   #services p {
     color: #a1a1a1; }

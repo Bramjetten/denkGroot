@@ -107,6 +107,7 @@ nav
 
 #home
   background: #000
+  height: 100%
   overflow: hidden
   padding: 0
   position: relative
@@ -116,7 +117,7 @@ nav
   .introduction
     text-align: center
     position: absolute
-    top: 50%
+    top: 20%
     width: 100%
 
     h1
@@ -133,8 +134,10 @@ nav
         font-size: 26px
 
   #logo_big
-    height: auto
-    width: auto
+    height: 200px
+    width: 200px
+
+    @include retina-image("/images/logo_big", 200px 200px)
 
   img
     height: 100%
@@ -206,8 +209,9 @@ nav
     color: #dcdedd
     border-color: #4e4e4e
 
-  h2
-    text-align: center
+  .service
+    h2
+      text-align: center
 
   p
     color: #a1a1a1

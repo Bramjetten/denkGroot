@@ -12,5 +12,5 @@ set :haml, { format: :html5 }
 
 # Application routes
 get '/' do
-  haml :index
+  haml :home
 end

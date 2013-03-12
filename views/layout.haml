@@ -9,16 +9,32 @@
     %link{rel: 'stylesheet', href: '/stylesheets/application.css'}
 
   %body
-    %section.page
+    %nav
+      %ul
+        %a#logo{href: '#home'} denkGroot
+
+        %li.active
+          %a{href: '#about'} Over ons
+        %li
+          %a{href: '#services'} Diensten
+        %li
+          %a{href: '#portfolio'} Ons werk
+        %li
+          %a{href: '#contact'} Contact
+
+    %section.page#home
+      = yield
+
+    %section.page#about
       = haml :overons
 
-    %section.page.services
+    %section.page#services
       = haml :diensten
 
-    %section.page.portfolio
+    %section.page#portfolio
       = haml :onswerk
 
-    %section.page.contact
+    %section.page#contact
       = haml :contact
 
     = haml :footer

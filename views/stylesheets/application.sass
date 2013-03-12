@@ -13,6 +13,10 @@ html, body
   min-height: 120%
   padding: 50px 0
 
+  @include media($tablet)
+    min-height: 0
+    padding: 0
+
 // Grid
 
 .container
@@ -48,6 +52,62 @@ html, body
 
     @include media($mobile)
       @include span-columns(4)
+
+// Navigatie
+
+nav
+  background: #fff
+  position: fixed
+  width: 100%
+  z-index: 10
+
+  @include box-shadow(0 0 3px rgba(0, 0, 0, .5))
+
+  @include media($tablet)
+    display: none
+
+  ul
+    margin: 0 auto
+    padding: 0 20px
+    text-align: right
+    @include outer-container
+
+    li
+      display: inline-block
+
+    li a
+      border-top: 2px solid transparent
+      color: #333
+      display: inline-block
+      font-family: "AllerDisplay-Regular"
+      font-size: 14px
+      line-height: 46px
+      margin: 0 20px
+      text-transform: uppercase
+
+    li.active a
+      border-bottom: 2px solid #01a388
+      color: #01a388
+
+    li:last-child a
+      margin-right: 0
+
+  #logo
+    height: 41px
+    overflow: hidden
+    position: absolute
+    text-indent: 100%
+    top: 4px
+    white-space: nowrap
+    width: 109px
+    @include retina-image("/images/logo", 109px 41px)
+
+// Home
+
+#home
+  background: #222
+  position: relative
+  min-height: 100%
 
 // Over ons
 
@@ -94,7 +154,7 @@ html, body
 
 // Diensten
 
-.services
+#services
   background: #222
 
   h1
@@ -127,7 +187,7 @@ html, body
 
 // Ons werk
 
-.portfolio
+#portfolio
   min-height: 0
   padding-bottom: 0px
 
@@ -161,9 +221,12 @@ html, body
 
 // Contact
 
-.contact
+#contact
   min-height: 100%
-  padding: 0
+  padding: 0 0 200px 0
+
+  @include media($tablet)
+    min-height: 0
 
 .contact-form
   padding: 0 10px

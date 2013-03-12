@@ -11,6 +11,10 @@ html, body {
 .page {
   min-height: 120%;
   padding: 50px 0; }
+  @media screen and (max-width: 768px) {
+    .page {
+      min-height: 0;
+      padding: 0; } }
 
 .container {
   padding: 0 10px;
@@ -90,6 +94,64 @@ html, body {
         .column.three:last-child {
           margin-right: 0; } }
 
+nav {
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+  @media screen and (max-width: 768px) {
+    nav {
+      display: none; } }
+  nav ul {
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: right;
+    zoom: 1;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    nav ul:before, nav ul:after {
+      content: "";
+      display: table; }
+    nav ul:after {
+      clear: both; }
+    nav ul li {
+      display: inline-block; }
+    nav ul li a {
+      border-top: 2px solid transparent;
+      color: #333333;
+      display: inline-block;
+      font-family: "AllerDisplay-Regular";
+      font-size: 14px;
+      line-height: 46px;
+      margin: 0 20px;
+      text-transform: uppercase; }
+    nav ul li.active a {
+      border-bottom: 2px solid #01a388;
+      color: #01a388; }
+    nav ul li:last-child a {
+      margin-right: 0; }
+  nav #logo {
+    height: 41px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    top: 4px;
+    white-space: nowrap;
+    width: 109px;
+    background-image: url("/images/logo.png"); }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      nav #logo {
+        background-image: url("/images/logo@2x.png");
+        background-size: 109px 41px; } }
+
+#home {
+  background: #222222;
+  position: relative;
+  min-height: 100%; }
+
 .profile {
   display: block;
   float: left;
@@ -153,14 +215,14 @@ html, body {
 .profile-picture {
   border-radius: 50%; }
 
-.services {
+#services {
   background: #222222; }
-  .services h1 {
+  #services h1 {
     color: #dcdedd;
     border-color: #4e4e4e; }
-  .services h2 {
+  #services h2 {
     text-align: center; }
-  .services p {
+  #services p {
     color: #a1a1a1; }
 
 .concept-image {
@@ -193,52 +255,52 @@ html, body {
       background-image: url("/images/realisatie@2x.png");
       background-size: 88px 114px; } }
 
-.portfolio {
+#portfolio {
   min-height: 0;
   padding-bottom: 0px; }
-  .portfolio .description {
+  #portfolio .description {
     padding: 0 10px;
     display: block;
     float: left;
     margin-right: 2.35765%;
     width: 31.76157%; }
-    .portfolio .description:last-child {
+    #portfolio .description:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
-      .portfolio .description {
+      #portfolio .description {
         display: block;
         float: left;
         margin-right: 3.57866%;
         width: 48.21067%; }
-        .portfolio .description:last-child {
+        #portfolio .description:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 480px) {
-      .portfolio .description {
+      #portfolio .description {
         display: block;
         float: left;
         margin-right: 7.42297%;
         width: 100%; }
-        .portfolio .description:last-child {
+        #portfolio .description:last-child {
           margin-right: 0; } }
-  .portfolio .row {
+  #portfolio .row {
     margin: 40px 0 0 0; }
-  .portfolio .image {
+  #portfolio .image {
     text-align: right;
     display: block;
     float: left;
     margin-right: 2.35765%;
     width: 65.88078%; }
-    .portfolio .image:last-child {
+    #portfolio .image:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
-      .portfolio .image {
+      #portfolio .image {
         display: block;
         float: left;
         margin-right: 3.57866%;
         width: 48.21067%; }
-        .portfolio .image:last-child {
+        #portfolio .image:last-child {
           margin-right: 0; } }
-    .portfolio .image img {
+    #portfolio .image img {
       display: block;
       max-width: 622px;
       width: 100%; }
@@ -246,9 +308,12 @@ html, body {
 .gray-background {
   background: #fafafa; }
 
-.contact {
+#contact {
   min-height: 100%;
-  padding: 0; }
+  padding: 0 0 200px 0; }
+  @media screen and (max-width: 768px) {
+    #contact {
+      min-height: 0; } }
 
 .contact-form {
   padding: 0 10px;

@@ -500,7 +500,8 @@ p {
   line-height: 22px;
   margin: 22px 0; }
   p strong {
-    font-family: "Aller-Bold"; }
+    font-family: "Aller-Bold";
+    font-weight: normal; }
 
 a {
   color: #0088cc;

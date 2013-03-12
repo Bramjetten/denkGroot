@@ -6,7 +6,6 @@ jQuery(document).ready(function($) {
     var introHeight = introduction.height();
 
     introduction.css("top", windowHeight / 2 - introHeight / 2 + "px");
-
   }
   
   sniffer();

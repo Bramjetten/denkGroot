@@ -399,6 +399,22 @@ nav {
       .contact-information:last-child {
         margin-right: 0; } }
 
+.contact {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .contact:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .contact {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .contact:last-child {
+        margin-right: 0; } }
+
 .map {
   display: block;
   max-height: 300px;

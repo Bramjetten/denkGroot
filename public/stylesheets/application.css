@@ -253,10 +253,6 @@ nav {
         margin: 0;
         text-align: left; } }
   .profile small {
-    color: #666666;
-    display: block;
-    font-family: "Aller-Italic";
-    font-size: 15px;
     text-align: center; }
     @media screen and (max-width: 768px) {
       .profile small {
@@ -488,7 +484,13 @@ h4 {
   margin-top: 22px;
   text-transform: uppercase; }
 
-hgroup h1, hgroup h2, hgroup h3 {
+small {
+  color: #666666;
+  display: block;
+  font-family: "Aller-Italic";
+  font-size: 15px; }
+
+hgroup h1, hgroup h2, hgroup h3, hgroup h4 {
   margin: 0; }
 
 p {

@@ -22,6 +22,7 @@ jQuery(document).ready(function($) {
   //on window resize event
   $(window).resize(function(){
     sniffer();
+    $('[data-spy="scroll"]').scrollspy('refresh');
   });
 
 });

@@ -1,0 +1,8 @@
+# Logfile created on 2013-03-12 16:14:46 +0100 by logger.rb/31641
+[03/12/13 16:14:46 +0100 iMac-van-Bram.local (2430)] INFO : Environment: development
+[03/12/13 16:14:46 +0100 iMac-van-Bram.local (2430)] INFO : Dispatcher: sinatra
+[03/12/13 16:14:46 +0100 iMac-van-Bram.local (2430)] INFO : Application: denkGroot
+[03/12/13 16:14:46 +0100 iMac-van-Bram.local (2430)] WARN : Agent configured not to send data in this environment.
+[03/12/13 16:14:46 +0100 iMac-van-Bram.local (2430)] INFO : Installing Net instrumentation
+[03/12/13 16:14:46 +0100 iMac-van-Bram.local (2430)] INFO : Installing Sinatra instrumentation
+[03/12/13 16:14:46 +0100 iMac-van-Bram.local (2430)] INFO : Finished instrumentation

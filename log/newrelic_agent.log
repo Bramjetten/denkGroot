@@ -6,3 +6,17 @@
 [03/12/13 16:14:46 +0100 iMac-van-Bram.local (2430)] INFO : Installing Net instrumentation
 [03/12/13 16:14:46 +0100 iMac-van-Bram.local (2430)] INFO : Installing Sinatra instrumentation
 [03/12/13 16:14:46 +0100 iMac-van-Bram.local (2430)] INFO : Finished instrumentation
+[03/12/13 18:14:07 +0100 iMac-van-Bram.local (808)] INFO : Environment: development
+[03/12/13 18:14:07 +0100 iMac-van-Bram.local (808)] INFO : Dispatcher: sinatra
+[03/12/13 18:14:07 +0100 iMac-van-Bram.local (808)] INFO : Application: denkGroot
+[03/12/13 18:14:07 +0100 iMac-van-Bram.local (808)] WARN : Agent configured not to send data in this environment.
+[03/12/13 18:14:07 +0100 iMac-van-Bram.local (808)] INFO : Installing Net instrumentation
+[03/12/13 18:14:07 +0100 iMac-van-Bram.local (808)] INFO : Installing Sinatra instrumentation
+[03/12/13 18:14:07 +0100 iMac-van-Bram.local (808)] INFO : Finished instrumentation
+[03/12/13 20:30:28 +0100 iMac-van-Bram.local (3222)] INFO : Environment: development
+[03/12/13 20:30:28 +0100 iMac-van-Bram.local (3222)] INFO : Dispatcher: sinatra
+[03/12/13 20:30:28 +0100 iMac-van-Bram.local (3222)] INFO : Application: denkGroot
+[03/12/13 20:30:28 +0100 iMac-van-Bram.local (3222)] WARN : Agent configured not to send data in this environment.
+[03/12/13 20:30:28 +0100 iMac-van-Bram.local (3222)] INFO : Installing Net instrumentation
+[03/12/13 20:30:28 +0100 iMac-van-Bram.local (3222)] INFO : Installing Sinatra instrumentation
+[03/12/13 20:30:28 +0100 iMac-van-Bram.local (3222)] INFO : Finished instrumentation

@@ -22,6 +22,7 @@ GEM
     net-ssh (2.6.5)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
+    newrelic_rpm (3.5.5.38)
     rack (1.5.2)
     rake (10.0.3)
     rb-fsevent (0.9.3)
@@ -42,6 +43,7 @@ DEPENDENCIES
   capistrano
   haml (~> 3.1.4)
   neat
+  newrelic_rpm
   rake
   rb-fsevent (~> 0.9.1)
   sass

@@ -64,6 +64,31 @@ html, body {
         width: 100%; }
         .column.four:last-child {
           margin-right: 0; } }
+  .column.three {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .column.three:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .column.three {
+        display: block;
+        float: left;
+        margin-right: 3.57866%;
+        width: 48.21067%; }
+        .column.three:last-child {
+          margin-right: 0; }
+        .column.three:nth-child(2n) {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      .column.three {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .column.three:last-child {
+          margin-right: 0; } }
 
 .profile {
   display: block;
@@ -109,10 +134,6 @@ html, body {
       .profile .description:last-child {
         margin-right: 0; } }
   .profile h3 {
-    color: #0088cc;
-    font-family: "SkolarWeb-Italic";
-    font-size: 20px;
-    font-weight: normal;
     margin: 12px 0 0 0;
     text-align: center; }
     @media screen and (max-width: 768px) {
@@ -130,7 +151,6 @@ html, body {
         text-align: left; } }
 
 .profile-picture {
-  -webkit-border-radius: 50%;
   border-radius: 50%; }
 
 .services {
@@ -173,6 +193,127 @@ html, body {
       background-image: url("/images/realisatie@2x.png");
       background-size: 88px 114px; } }
 
+.portfolio {
+  min-height: 0;
+  padding-bottom: 0px; }
+  .portfolio .description {
+    padding: 0 10px;
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .portfolio .description:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .portfolio .description {
+        display: block;
+        float: left;
+        margin-right: 3.57866%;
+        width: 48.21067%; }
+        .portfolio .description:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      .portfolio .description {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .portfolio .description:last-child {
+          margin-right: 0; } }
+  .portfolio .row {
+    margin: 40px 0 0 0; }
+  .portfolio .image {
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .portfolio .image:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .portfolio .image {
+        display: block;
+        float: left;
+        margin-right: 3.57866%;
+        width: 48.21067%; }
+        .portfolio .image:last-child {
+          margin-right: 0; } }
+    .portfolio .image img {
+      display: block;
+      max-width: 622px;
+      width: 100%; }
+
+.gray-background {
+  background: #fafafa; }
+
+.contact {
+  min-height: 100%;
+  padding: 0; }
+
+.contact-form {
+  padding: 0 10px;
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .contact-form:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .contact-form {
+      display: block;
+      float: left;
+      margin-right: 3.57866%;
+      width: 100%; }
+      .contact-form:last-child {
+        margin-right: 0; } }
+
+.contact-information {
+  padding: 0 10px;
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .contact-information:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .contact-information {
+      display: block;
+      float: left;
+      margin-right: 3.57866%;
+      width: 100%; }
+      .contact-information:last-child {
+        margin-right: 0; } }
+
+.map {
+  display: block;
+  max-height: 300px;
+  overflow: hidden;
+  position: relative; }
+  .map img {
+    display: block;
+    width: 100%; }
+
+.map::before {
+  content: "";
+  display: block;
+  height: 100%;
+  left: -10%;
+  position: absolute;
+  width: 120%;
+  -webkit-box-shadow: inset 0 0 7px black;
+  box-shadow: inset 0 0 7px black; }
+
+#footer {
+  min-height: 200px;
+  margin-top: -200px; }
+  #footer p, #footer ul li a {
+    font-size: 13px; }
+  #footer ul {
+    margin: 22px 0;
+    padding: 0; }
+  #footer ul li {
+    list-style: none; }
+
 h1 {
   border-bottom: 1px dashed #e5e5e5;
   color: #333333;
@@ -202,23 +343,61 @@ h2 {
     h2 {
       font-size: 16px; } }
 
+h3 {
+  color: #0088cc;
+  font-family: "SkolarWeb-Italic";
+  font-size: 20px;
+  font-weight: normal; }
+
+h4 {
+  color: #666666;
+  font-family: "AllerDisplay-Regular";
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 22px;
+  text-transform: uppercase; }
+
+hgroup h1, hgroup h2, hgroup h3 {
+  margin: 0; }
+
 p {
   color: #666666;
   font-family: "Aller-Regular";
   font-size: 14px;
-  line-height: 22px; }
+  line-height: 22px;
+  margin: 22px 0; }
   p strong {
     font-family: "Aller-Bold"; }
-  p a {
-    color: #0088cc;
-    text-decoration: none;
-    -webkit-transition: compact(color 0.2s ease-in-out, false, false, false, false, false, false, false, false);
-    -moz-transition: compact(color 0.2s ease-in-out, false, false, false, false, false, false, false, false);
-    -ms-transition: compact(color 0.2s ease-in-out, false, false, false, false, false, false, false, false);
-    -o-transition: compact(color 0.2s ease-in-out, false, false, false, false, false, false, false, false);
-    transition: compact(color 0.2s ease-in-out, false, false, false, false, false, false, false, false); }
-  p a:hover {
-    color: #01a388; }
+
+a {
+  color: #0088cc;
+  font-family: "Aller-Regular";
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -ms-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear; }
+
+a:hover {
+  color: #01a388; }
+
+a.button {
+  background-color: #0088cc;
+  border-radius: 3px;
+  color: white;
+  font-family: "Aller-Bold";
+  font-size: 13px;
+  padding: 10px 16px;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease; }
+  a.button:hover {
+    background-color: #01a388;
+    color: white; }
 
 ::-moz-selection {
   background-color: #333333;

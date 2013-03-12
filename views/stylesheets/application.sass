@@ -23,7 +23,7 @@ html, body
   margin: 40px 0
   @include row(block)
 
-  @include breakpoint($mobile)
+  @include media($mobile)
     margin: 0
 
 .column
@@ -32,11 +32,21 @@ html, body
   &.four
     @include span-columns(4)
 
-    @include breakpoint($tablet)
+    @include media($tablet)
       @include span-columns(4)
       @include omega(2n)
 
-    @include breakpoint($mobile)
+    @include media($mobile)
+      @include span-columns(4)
+
+  &.three
+    @include span-columns(3)
+
+    @include media($tablet)
+      @include span-columns(4)
+      @include omega(2n)
+
+    @include media($mobile)
       @include span-columns(4)
 
 // Over ons
@@ -44,32 +54,28 @@ html, body
 .profile
   @include span-columns(3)
 
-  @include breakpoint($tablet)
+  @include media($tablet)
     @include span-columns(4)
     @include omega(2n)
 
-  @include breakpoint($mobile)
+  @include media($mobile)
     @include span-columns(4)
 
   img
     width: 100%
 
-    @include breakpoint($tablet)
+    @include media($tablet)
       @include span-columns(2)
 
   .description
-    @include breakpoint($tablet)
+    @include media($tablet)
       @include span-columns(6)
 
   h3
-    color: #0088cc
-    font-family: "SkolarWeb-Italic"
-    font-size: 20px
-    font-weight: normal
     margin: 12px 0 0 0
     text-align: center
 
-    @include breakpoint($tablet)
+    @include media($tablet)
       margin: 0
       text-align: left
 
@@ -80,11 +86,11 @@ html, body
     font-size: 15px
     text-align: center
 
-    @include breakpoint($tablet)
+    @include media($tablet)
       text-align: left
 
 .profile-picture
-  @include border-radius(50%)
+  border-radius: 50%
 
 // Diensten
 
@@ -119,6 +125,98 @@ html, body
   width: 88px
   @include retina-image("/images/realisatie", 88px 114px)
 
+// Ons werk
+
+.portfolio
+  min-height: 0
+  padding-bottom: 0px
+
+  .description
+    padding: 0 10px
+    @include span-columns(4)
+
+    @include media($tablet)
+      @include span-columns(4)
+
+    @include media($mobile)
+      @include span-columns(4)
+
+  .row
+    margin: 40px 0 0 0
+
+  .image
+    text-align: right
+    @include span-columns(8)
+
+    @include media($tablet)
+      @include span-columns(4)
+
+    img
+      display: block
+      max-width: 622px
+      width: 100%
+
+.gray-background
+  background: #fafafa
+
+// Contact
+
+.contact
+  min-height: 100%
+  padding: 0
+
+.contact-form
+  padding: 0 10px
+
+  @include span-columns(8)
+
+  @include media($tablet)
+    @include span-columns(8)
+
+.contact-information
+  padding: 0 10px
+
+  @include span-columns(4)
+
+  @include media($tablet)
+    @include span-columns(8)
+
+
+.map
+  display: block
+  max-height: 300px
+  overflow: hidden
+  position: relative
+
+  img
+    display: block
+    width: 100%
+
+.map::before
+  content: ""
+  display: block
+  height: 100%
+  left: -10%
+  position: absolute
+  width: 120%
+  @include box-shadow(inset 0 0 7px #000)
+
+// Footer
+
+#footer
+  min-height: 200px
+  margin-top: -200px
+
+  p, ul li a
+    font-size: 13px
+
+  ul
+    margin: 22px 0
+    padding: 0
+
+  ul li
+    list-style: none
+
 // Styles
 
 h1
@@ -129,11 +227,11 @@ h1
   font-weight: normal
   line-height: 80px
 
-  @include breakpoint($tablet)
+  @include media($tablet)
     font-size: 40px
     line-height: 60px
 
-  @include breakpoint($mobile)
+  @include media($mobile)
     font-size: 32px
     line-height: 48px
 
@@ -144,28 +242,62 @@ h2
   font-weight: normal
   text-transform: uppercase
 
-  @include breakpoint($tablet)
+  @include media($tablet)
     font-size: 20px
 
-  @include breakpoint($mobile)
+  @include media($mobile)
     font-size: 16px
+
+h3
+  color: #0088cc
+  font-family: "SkolarWeb-Italic"
+  font-size: 20px
+  font-weight: normal
+
+h4
+  color: #666
+  font-family: "AllerDisplay-Regular"
+  font-size: 13px
+  font-weight: normal
+  margin-top: 22px
+  text-transform: uppercase
+
+hgroup
+  h1, h2, h3
+    margin: 0
 
 p
   color: #666
   font-family: "Aller-Regular"
   font-size: 14px
   line-height: 22px
+  margin: 22px 0
 
   strong
     font-family: "Aller-Bold"
 
-  a
-    color: #0088cc
-    text-decoration: none
-    @include transition (color 0.2s ease-in-out)
+a
+  color: #0088cc
+  font-family: "Aller-Regular"
+  font-size: 14px
+  text-decoration: none
+  @include transition (color .2s linear)
 
-  a:hover
-    color: #01a388
+a:hover
+  color: #01a388
+
+a.button
+  background-color: #0088cc
+  border-radius: 3px
+  color: #fff
+  font-family: "Aller-Bold"
+  font-size: 13px
+  padding: 10px 16px
+  @include transition (background-color .2s ease)
+
+  &:hover
+    background-color: #01a388
+    color: #fff
 
 ::-moz-selection
   background-color: #333

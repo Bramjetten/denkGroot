@@ -1,0 +1,9 @@
+@function compact($vars...) {
+  $list: ();
+  @each $var in $vars {
+    @if $var {
+      $list: append($list, $var, comma);
+    }
+  }
+  @return $list;
+}

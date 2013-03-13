@@ -302,15 +302,59 @@ nav
   @include media($mobile)
     @include span-columns(4)
 
-.map
+.map-container
   display: block
   max-height: 300px
   overflow: hidden
   position: relative
 
+.map
+  position: relative
+
   img
     display: block
     width: 100%
+
+  .current-location
+    left: 61%
+    position: absolute
+    top: 66%
+
+  .blob
+    position: relative
+
+  .dot
+    border-radius: 30px
+    height: 12px
+    left: 6px
+    position: absolute
+    top: 6px
+    width: 12px
+    z-index: 3
+    @include background-image(linear-gradient(top left, #5eebfd, #05199d))
+    @include box-shadow(0 0 4px #031264)
+
+  .glow
+    background: rgba(162, 198, 252, .5)
+    border: 2px solid #a2c6fc
+    border-radius: 30px
+    height: 24px
+    opacity: 0
+    position: absolute
+    width: 24px
+    @include animation(pulsate 1.4s infinite)
+    @include box-shadow(0 0 5px #95dafd)
+
+@include keyframes(pulsate)
+  0%
+    opacity: 0
+    @include transform(scale(0.1, 0.1))
+  50%
+    opacity: 1
+  100%
+    opacity: 0
+    @include transform(scale(1.2, 1.2))
+
 
 .map::before
   content: ""

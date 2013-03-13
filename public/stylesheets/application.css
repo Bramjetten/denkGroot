@@ -431,9 +431,9 @@ nav {
     display: block;
     width: 100%; }
   .map .current-location {
-    left: 61%;
+    left: 60%;
     position: absolute;
-    top: 66%; }
+    top: 39%; }
   .map .blob {
     position: relative; }
   .map .dot {

@@ -27,3 +27,10 @@
 [03/13/13 09:36:17 +0100 MacBook-Pro-van-Bram.local (5779)] INFO : Installing Net instrumentation
 [03/13/13 09:36:17 +0100 MacBook-Pro-van-Bram.local (5779)] INFO : Installing Sinatra instrumentation
 [03/13/13 09:36:17 +0100 MacBook-Pro-van-Bram.local (5779)] INFO : Finished instrumentation
+[03/13/13 10:37:13 +0100 MacBook-Pro-van-Bram.local (6442)] INFO : Environment: development
+[03/13/13 10:37:13 +0100 MacBook-Pro-van-Bram.local (6442)] INFO : Dispatcher: sinatra
+[03/13/13 10:37:13 +0100 MacBook-Pro-van-Bram.local (6442)] INFO : Application: denkGroot
+[03/13/13 10:37:13 +0100 MacBook-Pro-van-Bram.local (6442)] WARN : Agent configured not to send data in this environment.
+[03/13/13 10:37:13 +0100 MacBook-Pro-van-Bram.local (6442)] INFO : Installing Net instrumentation
+[03/13/13 10:37:13 +0100 MacBook-Pro-van-Bram.local (6442)] INFO : Installing Sinatra instrumentation
+[03/13/13 10:37:13 +0100 MacBook-Pro-van-Bram.local (6442)] INFO : Finished instrumentation

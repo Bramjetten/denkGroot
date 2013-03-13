@@ -129,6 +129,8 @@ nav {
       margin: 0 10px;
       padding: 0 10px;
       text-transform: uppercase; }
+    nav ul li a[href="#home"] {
+      display: none; }
     nav ul li.active a {
       border-bottom: 2px solid #01a388;
       color: #01a388; }

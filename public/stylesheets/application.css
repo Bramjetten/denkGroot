@@ -107,6 +107,7 @@ nav {
   nav ul {
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
     text-align: right;
     zoom: 1;
     max-width: 68em;
@@ -138,6 +139,7 @@ nav {
       margin-right: 0; }
   nav #logo {
     height: 41px;
+    left: 0px;
     overflow: hidden;
     position: absolute;
     text-indent: 100%;

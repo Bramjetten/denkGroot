@@ -69,7 +69,8 @@
 
     , process: function () {
         var scrollTop = this.$scrollElement.scrollTop() + this.options.offset
-          , scrollHeight = this.$scrollElement[0].scrollHeight || this.$body[0].scrollHeight
+          // , scrollHeight = this.$scrollElement[0].scrollHeight || this.$body[0].scrollHeight
+          , scrollHeight = $(document).height()
           , maxScroll = scrollHeight - this.$scrollElement.height()
           , offsets = this.offsets
           , targets = this.targets

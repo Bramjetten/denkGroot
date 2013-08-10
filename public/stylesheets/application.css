@@ -4,7 +4,11 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html, body {
+html {
+  height: 100%;
+  min-height: 100%; }
+
+body {
   height: 100%;
   min-height: 100%; }
 
@@ -107,6 +111,7 @@ nav {
   nav ul {
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
     text-align: right;
     zoom: 1;
     max-width: 68em;
@@ -129,6 +134,8 @@ nav {
       margin: 0 10px;
       padding: 0 10px;
       text-transform: uppercase; }
+    nav ul li a[href="#home"] {
+      display: none; }
     nav ul li.active a {
       border-bottom: 2px solid #01a388;
       color: #01a388; }
@@ -136,6 +143,7 @@ nav {
       margin-right: 0; }
   nav #logo {
     height: 41px;
+    left: 0px;
     overflow: hidden;
     position: absolute;
     text-indent: 100%;
@@ -417,14 +425,171 @@ nav {
       .contact:last-child {
         margin-right: 0; } }
 
-.map {
+.map-container {
   display: block;
-  max-height: 300px;
+  max-height: 380px;
   overflow: hidden;
+  position: relative; }
+
+.map {
   position: relative; }
   .map img {
     display: block;
     width: 100%; }
+  .map .current-location {
+    left: 60%;
+    position: absolute;
+    top: 39%; }
+  .map .blob {
+    position: relative; }
+  .map .dot {
+    border-radius: 30px;
+    height: 12px;
+    left: 6px;
+    position: absolute;
+    top: 6px;
+    width: 12px;
+    z-index: 3;
+    background-image: -webkit-linear-gradient(top left, #5eebfd, #05199d);
+    background-image: -moz-linear-gradient(top left, #5eebfd, #05199d);
+    background-image: -ms-linear-gradient(top left, #5eebfd, #05199d);
+    background-image: -o-linear-gradient(top left, #5eebfd, #05199d);
+    background-image: linear-gradient(top left, #5eebfd, #05199d);
+    -webkit-box-shadow: 0 0 4px #031264;
+    box-shadow: 0 0 4px #031264; }
+  .map .glow {
+    background: rgba(162, 198, 252, 0.5);
+    border: 2px solid #a2c6fc;
+    border-radius: 30px;
+    height: 24px;
+    opacity: 0;
+    position: absolute;
+    width: 24px;
+    -webkit-animation: pulsate 1.4s infinite;
+    -moz-animation: pulsate 1.4s infinite;
+    animation: pulsate 1.4s infinite;
+    -webkit-box-shadow: 0 0 5px #95dafd;
+    box-shadow: 0 0 5px #95dafd; }
+
+@-moz-keyframes pulsate {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    -o-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1); }
+
+  50% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2); } }
+
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    -o-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1); }
+
+  50% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2); } }
+
+@-o-keyframes pulsate {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    -o-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1); }
+
+  50% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2); } }
+
+@-ms-keyframes pulsate {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    -o-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1); }
+
+  50% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2); } }
+
+@-khtml-keyframes pulsate {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    -o-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1); }
+
+  50% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2); } }
+
+@keyframes pulsate {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    -o-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1); }
+
+  50% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2); } }
 
 .map::before {
   content: "";

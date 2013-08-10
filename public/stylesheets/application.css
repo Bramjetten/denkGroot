@@ -612,7 +612,7 @@ nav {
   #footer ul li {
     list-style: none; }
 
-h1 {
+section h1, footer h1, nav h1 {
   border-bottom: 1px dashed #e5e5e5;
   color: #333333;
   font-family: "SkolarBasicLt-Regular";
@@ -620,61 +620,54 @@ h1 {
   font-weight: normal;
   line-height: 80px; }
   @media screen and (max-width: 768px) {
-    h1 {
+    section h1, footer h1, nav h1 {
       font-size: 40px;
       line-height: 60px; } }
   @media screen and (max-width: 480px) {
-    h1 {
+    section h1, footer h1, nav h1 {
       font-size: 32px;
       line-height: 48px; } }
-
-h2 {
+section h2, footer h2, nav h2 {
   color: #01a388;
   font-family: "AllerDisplay-Regular";
   font-size: 24px;
   font-weight: normal;
   text-transform: uppercase; }
   @media screen and (max-width: 768px) {
-    h2 {
+    section h2, footer h2, nav h2 {
       font-size: 20px; } }
   @media screen and (max-width: 480px) {
-    h2 {
+    section h2, footer h2, nav h2 {
       font-size: 16px; } }
-
-h3 {
+section h3, footer h3, nav h3 {
   color: #0088cc;
   font-family: "SkolarWeb-Italic";
   font-size: 20px;
   font-weight: normal; }
-
-h4 {
+section h4, footer h4, nav h4 {
   color: #666666;
   font-family: "AllerDisplay-Regular";
   font-size: 13px;
   font-weight: normal;
   margin-top: 22px;
   text-transform: uppercase; }
-
-small {
+section small, footer small, nav small {
   color: #666666;
   display: block;
   font-family: "Aller-Italic";
   font-size: 15px; }
-
-hgroup h1, hgroup h2, hgroup h3, hgroup h4 {
+section hgroup h1, section hgroup h2, section hgroup h3, section hgroup h4, footer hgroup h1, footer hgroup h2, footer hgroup h3, footer hgroup h4, nav hgroup h1, nav hgroup h2, nav hgroup h3, nav hgroup h4 {
   margin: 0; }
-
-p {
+section p, footer p, nav p {
   color: #666666;
   font-family: "Aller-Regular";
   font-size: 14px;
   line-height: 22px;
   margin: 22px 0; }
-  p strong {
+  section p strong, footer p strong, nav p strong {
     font-family: "Aller-Bold";
     font-weight: normal; }
-
-a {
+section a, footer a, nav a {
   color: #0088cc;
   font-family: "Aller-Regular";
   font-size: 14px;
@@ -684,11 +677,9 @@ a {
   -ms-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear; }
-
-a:hover {
+section a:hover, footer a:hover, nav a:hover {
   color: #01a388; }
-
-a.button {
+section a.button, footer a.button, nav a.button {
   background-color: #0088cc;
   border-radius: 3px;
   color: white;
@@ -700,14 +691,12 @@ a.button {
   -ms-transition: background-color 0.2s ease;
   -o-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease; }
-  a.button:hover {
+  section a.button:hover, footer a.button:hover, nav a.button:hover {
     background-color: #01a388;
     color: white; }
-
-::-moz-selection {
+section ::-moz-selection, footer ::-moz-selection, nav ::-moz-selection {
   background-color: #333333;
   color: white; }
-
-::selection {
+section ::selection, footer ::selection, nav ::selection {
   background-color: #333333;
   color: white; }

@@ -388,98 +388,98 @@ nav
     list-style: none
 
 // Styles
+section, footer, nav
+  h1
+    border-bottom: 1px dashed #e5e5e5
+    color: #333
+    font-family: "SkolarBasicLt-Regular"
+    font-size: 48px
+    font-weight: normal
+    line-height: 80px
 
-h1
-  border-bottom: 1px dashed #e5e5e5
-  color: #333
-  font-family: "SkolarBasicLt-Regular"
-  font-size: 48px
-  font-weight: normal
-  line-height: 80px
+    @include media($tablet)
+      font-size: 40px
+      line-height: 60px
 
-  @include media($tablet)
-    font-size: 40px
-    line-height: 60px
+    @include media($mobile)
+      font-size: 32px
+      line-height: 48px
 
-  @include media($mobile)
-    font-size: 32px
-    line-height: 48px
+  h2
+    color: #01a388
+    font-family: "AllerDisplay-Regular"
+    font-size: 24px
+    font-weight: normal
+    text-transform: uppercase
 
-h2
-  color: #01a388
-  font-family: "AllerDisplay-Regular"
-  font-size: 24px
-  font-weight: normal
-  text-transform: uppercase
+    @include media($tablet)
+      font-size: 20px
 
-  @include media($tablet)
+    @include media($mobile)
+      font-size: 16px
+
+  h3
+    color: #0088cc
+    font-family: "SkolarWeb-Italic"
     font-size: 20px
-
-  @include media($mobile)
-    font-size: 16px
-
-h3
-  color: #0088cc
-  font-family: "SkolarWeb-Italic"
-  font-size: 20px
-  font-weight: normal
-
-h4
-  color: #666
-  font-family: "AllerDisplay-Regular"
-  font-size: 13px
-  font-weight: normal
-  margin-top: 22px
-  text-transform: uppercase
-
-small
-  color: #666
-  display: block
-  font-family: "Aller-Italic"
-  font-size: 15px
-
-hgroup
-  h1, h2, h3, h4
-    margin: 0
-
-p
-  color: #666
-  font-family: "Aller-Regular"
-  font-size: 14px
-  line-height: 22px
-  margin: 22px 0
-
-  strong
-    font-family: "Aller-Bold"
     font-weight: normal
 
-a
-  color: #0088cc
-  font-family: "Aller-Regular"
-  font-size: 14px
-  text-decoration: none
-  @include transition (color .2s linear)
+  h4
+    color: #666
+    font-family: "AllerDisplay-Regular"
+    font-size: 13px
+    font-weight: normal
+    margin-top: 22px
+    text-transform: uppercase
 
-a:hover
-  color: #01a388
+  small
+    color: #666
+    display: block
+    font-family: "Aller-Italic"
+    font-size: 15px
 
-a.button
-  background-color: #0088cc
-  border-radius: 3px
-  color: #fff
-  font-family: "Aller-Bold"
-  font-size: 13px
-  padding: 10px 16px
-  @include transition (background-color .2s ease)
+  hgroup
+    h1, h2, h3, h4
+      margin: 0
 
-  &:hover
-    background-color: #01a388
+  p
+    color: #666
+    font-family: "Aller-Regular"
+    font-size: 14px
+    line-height: 22px
+    margin: 22px 0
+
+    strong
+      font-family: "Aller-Bold"
+      font-weight: normal
+
+  a
+    color: #0088cc
+    font-family: "Aller-Regular"
+    font-size: 14px
+    text-decoration: none
+    @include transition (color .2s linear)
+
+  a:hover
+    color: #01a388
+
+  a.button
+    background-color: #0088cc
+    border-radius: 3px
+    color: #fff
+    font-family: "Aller-Bold"
+    font-size: 13px
+    padding: 10px 16px
+    @include transition (background-color .2s ease)
+
+    &:hover
+      background-color: #01a388
+      color: #fff
+
+  ::-moz-selection
+    background-color: #333
     color: #fff
 
-::-moz-selection
-  background-color: #333
-  color: #fff
-
-::selection
-  background-color: #333
-  color: #fff
+  ::selection
+    background-color: #333
+    color: #fff

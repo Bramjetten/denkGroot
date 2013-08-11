@@ -12,6 +12,7 @@ default_run_options[:pty] = true
 
 set :user, "deployer"
 set :use_sudo, false
+set :ssh_options, { forward_agent: true }
 
 set :scm, :git
 set :scm_passphrase, "v6g6IPwarI"

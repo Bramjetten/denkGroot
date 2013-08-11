@@ -1,5 +1,17 @@
 server {
   listen 80;
+  server_name denk-groot.nl;
+  rewrite ^/(.*) http://www.denkgroot.com/$1;
+}
+
+server {
+  listen 80;
+  server_name www.denk-groot.nl;
+  rewrite ^/(.*) http://www.denkgroot.com/$1;
+}
+
+server {
+  listen 80;
   server_name www.denkgroot.com;
   root <%= current_path %>/public;
   passenger_enabled on;

@@ -78,3 +78,68 @@
 [08/11/13 22:12:58 +0200 MacBook-Pro-van-Bram.local (41479)] INFO : Installing deferred Rack instrumentation
 [08/11/13 22:12:58 +0200 MacBook-Pro-van-Bram.local (41479)] INFO : Finished instrumentation
 [08/11/13 22:12:58 +0200 MacBook-Pro-van-Bram.local (41479)] INFO : Doing deferred dependency-detection before Rack startup
+[08/12/13 08:46:24 +0200 MacBook-Pro-van-Bram.local (42562)] INFO : Starting the New Relic agent in "development" environment.
+[08/12/13 08:46:24 +0200 MacBook-Pro-van-Bram.local (42562)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[08/12/13 08:46:24 +0200 MacBook-Pro-van-Bram.local (42562)] INFO : Reading configuration from config/newrelic.yml
+[08/12/13 08:46:24 +0200 MacBook-Pro-van-Bram.local (42562)] INFO : Enabling the Request Sampler.
+[08/12/13 08:46:24 +0200 MacBook-Pro-van-Bram.local (42562)] INFO : Environment: development
+[08/12/13 08:46:24 +0200 MacBook-Pro-van-Bram.local (42562)] INFO : No known dispatcher detected.
+[08/12/13 08:46:24 +0200 MacBook-Pro-van-Bram.local (42562)] INFO : Application: denkGroot
+[08/12/13 08:46:24 +0200 MacBook-Pro-van-Bram.local (42562)] WARN : Agent configured not to send data in this environment.
+[08/12/13 08:46:24 +0200 MacBook-Pro-van-Bram.local (42562)] INFO : Installing Net instrumentation
+[08/12/13 08:46:24 +0200 MacBook-Pro-van-Bram.local (42562)] INFO : Installing Sinatra instrumentation
+[08/12/13 08:46:24 +0200 MacBook-Pro-van-Bram.local (42562)] INFO : Installing deferred Rack instrumentation
+[08/12/13 08:46:24 +0200 MacBook-Pro-van-Bram.local (42562)] INFO : Finished instrumentation
+[08/12/13 08:46:25 +0200 MacBook-Pro-van-Bram.local (42562)] INFO : Doing deferred dependency-detection before Rack startup
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] INFO : Starting the New Relic agent in "development" environment.
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] INFO : Reading configuration from config/newrelic.yml
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] INFO : Enabling the Request Sampler.
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] INFO : Environment: development
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] INFO : No known dispatcher detected.
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] INFO : Application: denkGroot
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : Agent configured not to send data in this environment.
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] INFO : Installing Net instrumentation
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] INFO : Installing Sinatra instrumentation
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] INFO : Installing deferred Rack instrumentation
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] INFO : Finished instrumentation
+[08/12/13 09:04:10 +0200 MacBook-Pro-van-Bram.local (42828)] INFO : Doing deferred dependency-detection before Rack startup
+[08/12/13 09:54:37 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 09:55:18 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 09:57:23 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 09:58:29 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:00:12 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:05:56 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:07:15 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:09:36 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:11:56 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:11:57 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:12:02 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:12:02 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:12:11 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:12:11 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:14:06 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:14:06 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:14:06 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:14:06 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:14:07 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:14:07 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:14:07 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] INFO : Starting the New Relic agent in "development" environment.
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] INFO : Reading configuration from config/newrelic.yml
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] INFO : Enabling the Request Sampler.
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] INFO : Environment: development
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] INFO : No known dispatcher detected.
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] INFO : Application: denkGroot
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] WARN : Agent configured not to send data in this environment.
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] INFO : Installing Net instrumentation
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] INFO : Installing Sinatra instrumentation
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] INFO : Installing deferred Rack instrumentation
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] INFO : Finished instrumentation
+[08/12/13 10:14:08 +0200 MacBook-Pro-van-Bram.local (43786)] INFO : Doing deferred dependency-detection before Rack startup
+[08/12/13 10:15:36 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:15:44 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:15:53 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:16:47 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[08/12/13 10:16:52 +0200 MacBook-Pro-van-Bram.local (42828)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound

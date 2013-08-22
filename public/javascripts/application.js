@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
 
   // Video BG
 
-  if(typeof window.orientation !== 'undefined') {
+  if(typeof window.orientation === 'undefined') {
     var videoBG = $('#home').videoBG({
       position: "fixed",
       zIndex: -1,

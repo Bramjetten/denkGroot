@@ -24,4 +24,15 @@ jQuery(document).ready(function($) {
     $('[data-spy="scroll"]').scrollspy('refresh');
   });
 
+  // Video BG
+  var videoBG = $('#home').videoBG({
+    position: "fixed",
+    zIndex: -1,
+    mp4: 'javascripts/main.mp4',
+    ogv: 'javascripts/main.ogv',
+    webm: 'javascripts/main.webm',
+    poster: 'javascripts/poster.jpg',
+    opacity: .35
+  });
+
 });

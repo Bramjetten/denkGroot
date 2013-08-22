@@ -13,6 +13,7 @@ body {
   min-height: 100%; }
 
 .page {
+  background: white;
   min-height: 100%;
   padding: 50px 0; }
   @media screen and (max-width: 768px) {
@@ -157,7 +158,7 @@ nav {
         background-size: 109px 41px; } }
 
 #home {
-  background: black;
+  background: transparent;
   height: 100%;
   overflow: hidden;
   padding: 0;
@@ -171,7 +172,7 @@ nav {
     width: 100%; }
     #home .introduction h1 {
       border: none;
-      color: #dcdfdd;
+      color: #333333;
       font-family: "SkolarWeb-Italic";
       font-size: 36px;
       margin: 0; }
@@ -182,6 +183,7 @@ nav {
         #home .introduction h1 {
           font-size: 26px; } }
   #home #logo_big {
+    background-color: transparent;
     height: 200px;
     width: 200px;
     background-image: url("/images/logo_big.png"); }

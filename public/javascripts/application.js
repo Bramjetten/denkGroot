@@ -25,19 +25,14 @@ jQuery(document).ready(function($) {
   });
 
   // Video BG
-
-  if(typeof window.orientation === 'undefined') {
-    var videoBG = $('#home').videoBG({
-      position: "fixed",
-      zIndex: -1,
-      mp4: 'javascripts/main.mp4',
-      ogv: 'javascripts/main.ogv',
-      webm: 'javascripts/main.webm',
-      poster: 'javascripts/poster.jpg',
-      opacity: .35
-    });
-  } else {
-    $('body').css({background: '#ccd2de'})
-  }
+  var videoBG = $('#home').videoBG({
+    position: "fixed",
+    zIndex: -1,
+    mp4: 'javascripts/main.mp4',
+    ogv: 'javascripts/main.ogv',
+    webm: 'javascripts/main.webm',
+    poster: 'javascripts/poster.jpg',
+    opacity: .35
+  });
 
 });

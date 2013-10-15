@@ -157,6 +157,12 @@ nav {
         background-image: url("/images/logo@2x.png");
         background-size: 109px 41px; } }
 
+@media screen and (max-width: 768px) {
+  .videoBG {
+    background: #cccccc; }
+    .videoBG video {
+      display: none !important; } }
+
 #home {
   background: transparent;
   height: 100%;

@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
   $('#homepage_slider').royalSlider({
     autoPlay: {
       enabled: true,
-      pauseOnHover: false,
+      pauseOnHover: true,
       delay: 6000
     },
     arrowsNav: false,

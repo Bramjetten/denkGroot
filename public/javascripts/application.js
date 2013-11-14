@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
   jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
   $('#homepage_slider').royalSlider({
     autoPlay: {
-      enabled: true,
+      enabled: false,
       pauseOnHover: false,
       delay: 3000
     },

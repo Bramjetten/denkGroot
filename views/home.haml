@@ -1,4 +1,22 @@
 #homepage_slider
+  .rsContent{data: {rsDelay: 8000}}
+    %section#plango
+      .plangopattern
+      
+      .content.rsABlock{data: {:move_effect => 'top'}}
+        %h1 PlanGo
+        %h2 Rijschoolsoftware
+
+        %a.button{href: '/ons-werk'} Bekijk de case
+
+      .image-desktop.rsABlock{data: {:move_effect => 'bottom'}}
+        %img{src: '/images/plango_desktop.png'}
+
+      .image-phone.rsABlock{data: {:move_effect => 'bottom', delay: 1000}}
+        %img{src: '/images/plango_iphone.png'}
+
+      .image-tablet.rsABlock{data: {:move_effect => 'right', delay: 2000}}
+        %img{src: '/images/plango_ipad.png'}
   .rsContent
     %section#home
       .introduction.rsABlock{data: {:move_effect => 'top'}}
@@ -23,21 +41,4 @@
         .rsABlock.map-icon.map-icon-post{style: "left: 250px; top: 190px", data: {:move_effect => 'down'}}
         .rsABlock.map-icon.map-icon-house{style: "left: 400px; top: 210px", data: {:move_effect => 'down'}}
 
-  .rsContent{data: {rsDelay: 8000}}
-    %section#plango
-      .plangopattern
-      
-      .content.rsABlock{data: {:move_effect => 'top'}}
-        %h1 PlanGo
-        %h2 Rijschoolsoftware
-
-        %a.button{href: '/ons-werk'} Bekijk de case
-
-      .image-desktop.rsABlock{data: {:move_effect => 'bottom'}}
-        %img{src: '/images/plango_desktop.png'}
-
-      .image-phone.rsABlock{data: {:move_effect => 'bottom', delay: 1000}}
-        %img{src: '/images/plango_iphone.png'}
-
-      .image-tablet.rsABlock{data: {:move_effect => 'right', delay: 2000}}
-        %img{src: '/images/plango_ipad.png'}
+  

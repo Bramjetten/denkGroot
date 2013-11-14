@@ -14,47 +14,33 @@
       %script{src: "//html5shiv.googlecode.com/svn/trunk/html5.js"}
       %script{src: '/javascripts/selectivizr.min.js'}
 
-  %body{data: {spy: "scroll", target: "nav"}}
+  %body
     /[if lt IE 8]
       %script{src: "/javascripts/localization/nl_NL.js"}
       %script{src: "/javascripts/warning.js"}
       %script{src: "/javascripts/iewarning.js"}
 
     %nav
-      %ul.nav{style: 'width: 100%'}
-        %a#logo{href: '#home'} denkGroot
+      %ul
+        %a#logo{href: '/'} denkGroot
 
-        %li
-          %a{href: '#home'} Home
-        %li
-          %a{href: '#about'} Over ons
-        %li
-          %a{href: '#services'} Diensten
-        %li
-          %a{href: '#portfolio'} Ons werk
-        %li
-          %a{href: '#contact'} Contact
+        %li{class: ('active' if @page == "portfolio")}
+          %a{href: '/ons-werk'} Ons werk
+        %li{class: ('active' if @page == "services")}
+          %a{href: '/diensten'} Diensten
+        %li{class: ('active' if @page == "aboutus")}
+          %a{href: '/over-ons'} Over ons
+        %li{class: ('active' if @page == "contact")}
+          %a{href: '/contact'} Contact
 
-    %section.page#home
-      = yield
+    = yield
 
-    %section.page#about
-      = haml :overons
-
-    %section.page#services
-      = haml :diensten
-
-    %section.page#portfolio
-      = haml :onswerk
-
-    %section.page#contact
-      = haml :contact
-
-    = haml :footer
+    - unless @page == "home" || @page == "contact"
+      #contact_footer= haml :contact_footer
 
     %script{src: '/javascripts/jquery.min.js'}
     %script{src: '/javascripts/jquery.easing.js'}
-    %script{src: '/javascripts/jquery.scrollspy.js'}
+    %script{src: '/javascripts/jquery.royalslider.min.js'}
     %script{src: '/javascripts/jquery.videobg.js'}
     %script{src: '/javascripts/retina.js'}
     %script{src: '/javascripts/application.js'}

@@ -1,43 +1,10 @@
-.map-container
-  .map
-    .current-location
-      .blob
-        .glow
-        .dot
-    %img{src: '/images/map.jpg', alt: 'De Flammert 1408, Nieuw-Bergen'}
-
-.container
-  .row
-    .contact-form
-      %h2 Benieuwd naar de mogelijkheden?
-      %p Wij praten u graag bij over de laatste ontwikkelingen en mogelijkheden. Contact opnemen kan via Twitter, Facebook, email en zelfs nog telefoon.
-
-      .contact
-        %hgroup
-          %h3 Bram Jetten
-          %small @BramJetten
-
-        %p
-          bram at denkgroot.com<br />
-          06 18 606 826
-
-      .contact
-        %hgroup
-          %h3 Jeroen van Lier
-          %small @jeroen_van_lier
-
-        %p
-          jeroen at denkgroot.com<br />
-          06 54 227 614
-
-    .column
-
-    .contact-information
-      %h2 Contactgegevens
-      %p
-        De Flammert 1408<br />
-        5854 NE, Nieuw-Bergen<br />
-
-      %p
-        Email: info at denkgroot.com<br />
-        KvK: 55586473
+%section#contact
+  .map-container
+    .map
+      .current-location
+        .blob
+          .glow
+          .dot
+      %img{src: '/images/map.jpg', alt: 'De Flammert 1408, Nieuw-Bergen'}
+      
+  = haml :contact_footer

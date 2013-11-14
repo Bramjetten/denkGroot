@@ -10,24 +10,10 @@ jQuery(document).ready(function($) {
   
   sniffer();
 
-  $("nav a, .get-to-know-us, .navlink").bind('click', function(e) {
-    $('html,body').stop().animate({
-      scrollTop: $($(this).attr('href')).offset().top
-    }, 800, "easeInOutExpo");
-
-    e.preventDefault();
-  });
-
-  //on window resize event
-  $(window).resize(function(){
-    sniffer();
-    $('[data-spy="scroll"]').scrollspy('refresh');
-  });
-
   // Video BG
 
   var videoBG = $('#home').videoBG({
-    position: "fixed",
+    position: "absolute",
     zIndex: -1,
     mp4: 'javascripts/main.mp4',
     ogv: 'javascripts/main.ogv',
@@ -36,7 +22,30 @@ jQuery(document).ready(function($) {
     opacity: .35
   });
   if(typeof window.orientation !== 'undefined') {
-    $('body').css({"background": '#ccd2de'});
+    $('#home').css({"background": 'url("/javascripts/poster.jpg") center'});
   }
+
+  // Slider
+  jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
+  $('#homepage_slider').royalSlider({
+    autoPlay: {
+      enabled: false,
+      pauseOnHover: false,
+      delay: 3000
+    },
+    arrowsNav: false,
+    controlNavigationSpacing: 0,
+    controlNavigation: 'bullets',
+    imageScaleMode: 'none',
+    slidesSpacing: 0,
+    blockLoop: true,
+    controlInside: false,
+    loop: true,
+    numImagesToPreload: 6,
+    keyboardNavEnabled: true,
+    block: {
+      delay: 300
+    }
+  });
 
 });

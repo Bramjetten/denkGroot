@@ -6,7 +6,7 @@ role :app, "176.58.115.131"
 role :db,  "176.58.115.131", :primary => true
 
 set :port, 48392
-set :application, "denkgroot"
+set :application, "denkgroot_v2"
 
 default_run_options[:pty] = true
 

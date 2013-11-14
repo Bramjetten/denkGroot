@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
     autoPlay: {
       enabled: true,
       pauseOnHover: false,
-      delay: 3000
+      delay: 6000
     },
     arrowsNav: false,
     controlNavigationSpacing: 0,

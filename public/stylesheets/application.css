@@ -669,6 +669,12 @@ section h3, footer h3, nav h3 {
   font-family: "MerriweatherST-Italic";
   font-size: 18px;
   font-weight: normal; }
+  @media screen and (max-width: 768px) {
+    section h3, footer h3, nav h3 {
+      font-size: 16px; } }
+  @media screen and (max-width: 480px) {
+    section h3, footer h3, nav h3 {
+      font-size: 14px; } }
 section h4, footer h4, nav h4 {
   color: #666666;
   font-family: "FuturaPTHeavy-Reg";

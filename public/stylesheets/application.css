@@ -690,7 +690,8 @@ section p, footer p, nav p {
   line-height: 22px;
   margin: 22px 0; }
   section p strong, footer p strong, nav p strong {
-    font-family: "ProximaNova-Semibold"; }
+    font-family: "ProximaNova-Semibold";
+    font-weight: normal; }
 section a, footer a, nav a {
   color: #0088cc;
   font-family: "ProximaNova-Regular";

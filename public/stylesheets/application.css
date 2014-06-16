@@ -204,7 +204,10 @@ nav {
           background-size: 37px 36px; } }
 
 #home {
-  background: transparent;
+  background: url(/images/bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   height: 100%;
   min-height: 100%;
   overflow: hidden;
@@ -218,11 +221,10 @@ nav {
     width: 100%; }
     #home .introduction h1 {
       border: none;
-      color: #333333;
+      color: #eeeeee;
       font-family: "MerriweatherST-Italic";
-      font-size: 36px;
-      font-weight: normal;
-      margin: 0; }
+      font-size: 32px;
+      font-weight: normal; }
       @media screen and (max-width: 768px) {
         #home .introduction h1 {
           font-size: 32px; } }

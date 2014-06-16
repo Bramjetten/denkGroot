@@ -196,12 +196,12 @@ nav {
     @media screen and (max-width: 480px) {
       nav #logo {
         height: 52px;
-        width: 97px;
+        width: 37px;
         background-image: url("/images/logo-small.png"); } }
       @media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-width: 480px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-width: 480px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-width: 480px) and (min-resolution: 125dpi), only screen and (max-width: 480px) and (min-resolution: 1.3dppx) {
         nav #logo {
           background-image: url("/images/logo-small@2x.png");
-          background-size: 97px 36px; } }
+          background-size: 37px 36px; } }
 
 #home {
   background: transparent;

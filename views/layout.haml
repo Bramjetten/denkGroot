@@ -3,12 +3,11 @@
   %head
     %meta{charset: 'utf-8'}
     %meta{name: 'viewport', content: 'initial-scale=1.0'}
-    %meta{:"http-equiv" => "X-UA-Compatible", content: "IE=Edge"}
+    %meta{http_equiv: 'X-UA-Compatible', content: "IE=Edge"}
     %meta{description: 'denkGroot bouwt applicaties voor het web en mobiele apparaten als de iPhone en de iPad'}
     %title denkGroot Apps & websites
 
-    %link{href: "http://fnt.webink.com/wfs/webink.css/?project=7986BB53-D836-417B-B969-828D75C900FC&fonts=F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold,58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,94250451-B08F-6072-C8B8-6FDBBC9684ED:f=FuturaPTHeavy-Reg,B7095CAA-4BC5-3EC7-A618-53F33EF7F717:f=MerriweatherST-Italic", rel: "stylesheet" }
-
+    %link{rel: 'stylesheet', href: 'http://fnt.webink.com/wfs/webink.css/?project=7986BB53-D836-417B-B969-828D75C900FC&fonts=F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold,58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,94250451-B08F-6072-C8B8-6FDBBC9684ED:f=FuturaPTHeavy-Reg,B7095CAA-4BC5-3EC7-A618-53F33EF7F717:f=MerriweatherST-Italic' }
     %link{rel: 'stylesheet', href: '/stylesheets/application.css'}
 
     /[if lt IE 9]
@@ -25,6 +24,8 @@
       %ul
         %a#logo{href: '/'} denkGroot
 
+        %li.nav-toggle
+          %a{href: '#'} Menu
         %li{class: ('active' if @page == "portfolio")}
           %a{href: '/ons-werk'} Ons werk
         %li{class: ('active' if @page == "services")}

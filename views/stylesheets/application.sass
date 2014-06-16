@@ -67,14 +67,13 @@ body
 
 nav
   background: #fff
+  box-shadow: 0 0 3px rgba(0, 0, 0, .5)
   position: fixed
   width: 100%
   z-index: 999
 
-  @include box-shadow(0 0 3px rgba(0, 0, 0, .5))
-
   ul
-    height: 72px
+    min-height: 72px
     margin: 0 auto
     padding: 0 20px
     position: relative
@@ -82,13 +81,41 @@ nav
     @include outer-container
 
     @include media($mobile)
+      background: rgba(255, 255, 255, .9)
+      box-shadow: 0 0 3px rgba(0, 0, 0, .5)
+      min-height: 52px
       height: 52px
+      overflow: hidden
+      padding: 10px 20px
+      position: absolute
+      width: 100%
+      @include transition(height .4s ease)
 
     li
       display: inline-block
 
       @include media($mobile)
-        display: none
+        display: block
+
+    li.nav-toggle
+      display: none
+
+      @include media($mobile)
+        display: block
+
+      a:after
+        content: "+"
+        display: inline-block
+        font-family: $headings-font
+        line-height: 32px
+        position: absolute
+        margin-left: 2px
+
+    &.nav-opened
+      height: 180px
+
+      li.nav-toggle a:after
+        content: "-"
 
     li a
       color: #333
@@ -100,6 +127,10 @@ nav
       padding: 0 10px
       text-transform: uppercase
 
+      @include media($mobile)
+        display: block
+        line-height: 32px
+
     li a[href="#home"]
       display: none
 
@@ -109,20 +140,25 @@ nav
     li:last-child a
       margin-right: 0
 
+      @include media($mobile)
+        margin-right: 10px
+
   #logo
     background-repeat: no-repeat
     background-position: center
-    height: 100%
+    height: 70px
     left: 0px
     margin-left: 20px
     overflow: hidden
     position: absolute
     text-indent: 100%
+    top: 0px
     white-space: nowrap
     width: 155px
     @include retina-image("/images/logo", 155px 58px)
 
     @include media($mobile)
+      height: 52px
       width: 97px
       @include retina-image("/images/logo-small", 97px 36px)
 

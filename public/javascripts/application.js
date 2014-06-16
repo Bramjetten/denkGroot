@@ -25,27 +25,9 @@ jQuery(document).ready(function($) {
     $('#home').css({"background": 'url("/javascripts/poster.jpg") center'});
   }
 
-  // Slider
-  jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
-  $('#homepage_slider').royalSlider({
-    autoPlay: {
-      enabled: true,
-      pauseOnHover: true,
-      delay: 6000
-    },
-    arrowsNav: false,
-    controlNavigationSpacing: 0,
-    controlNavigation: 'bullets',
-    imageScaleMode: 'none',
-    slidesSpacing: 0,
-    blockLoop: true,
-    controlInside: false,
-    loop: true,
-    numImagesToPreload: 6,
-    keyboardNavEnabled: true,
-    block: {
-      delay: 300
-    }
-  });
+});
 
+$(document).on("click", "li.nav-toggle a", function() {
+  $("body nav > ul").toggleClass('nav-opened');
+  return false;
 });

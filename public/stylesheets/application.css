@@ -130,9 +130,8 @@ nav {
     nav ul li a {
       color: #333333;
       display: inline-block;
-      font-family: "Futura Std";
-      font-size: 13px;
-      font-weight: 700;
+      font-family: "FuturaPTHeavy-Reg";
+      font-size: 15px;
       line-height: 72px;
       margin: 0 10px;
       padding: 0 10px;
@@ -184,10 +183,8 @@ nav {
     #home .introduction h1 {
       border: none;
       color: #333333;
-      font-family: "Merriweather";
-      font-weight: 400;
+      font-family: "MerriweatherST-Italic";
       font-size: 36px;
-      font-style: italic;
       margin: 0; }
       @media screen and (max-width: 768px) {
         #home .introduction h1 {
@@ -604,9 +601,9 @@ nav {
 
 section h1, footer h1, nav h1 {
   color: #444444;
-  font-family: "Futura Std";
+  font-family: "FuturaPTHeavy-Reg";
   font-size: 36px;
-  font-weight: 700;
+  font-weight: normal;
   line-height: 112px;
   text-align: center;
   text-transform: uppercase; }
@@ -620,9 +617,9 @@ section h1, footer h1, nav h1 {
       line-height: 48px; } }
 section h2, footer h2, nav h2 {
   color: #01a388;
-  font-family: "Futura Std";
+  font-family: "FuturaPTHeavy-Reg";
   font-size: 24px;
-  font-weight: 700;
+  font-weight: normal;
   text-transform: uppercase; }
   @media screen and (max-width: 768px) {
     section h2, footer h2, nav h2 {
@@ -632,37 +629,34 @@ section h2, footer h2, nav h2 {
       font-size: 16px; } }
 section h3, footer h3, nav h3 {
   color: #0088cc;
-  font-family: "Merriweather";
+  font-family: "MerriweatherST-Italic";
   font-size: 18px;
-  font-style: italic;
   font-weight: normal; }
 section h4, footer h4, nav h4 {
   color: #666666;
-  font-family: "Futura Std";
+  font-family: "FuturaPTHeavy-Reg";
   font-size: 13px;
-  font-weight: 900;
+  font-weight: normal;
   margin-top: 22px;
   text-transform: uppercase; }
 section small, footer small, nav small {
   color: #666666;
   display: block;
-  font-family: "Proxima Nova";
-  font-size: 15px;
-  font-style: italic; }
+  font-family: "ProximaNova-RegularIt";
+  font-size: 15px; }
 section hgroup h1, section hgroup h2, section hgroup h3, section hgroup h4, footer hgroup h1, footer hgroup h2, footer hgroup h3, footer hgroup h4, nav hgroup h1, nav hgroup h2, nav hgroup h3, nav hgroup h4 {
   margin: 0; }
 section p, footer p, nav p {
   color: #666666;
-  font-family: "Proxima Nova";
+  font-family: "ProximaNova-Regular";
   font-size: 15px;
   line-height: 22px;
   margin: 22px 0; }
   section p strong, footer p strong, nav p strong {
-    font-family: "Proxima Nova";
-    font-weight: 600; }
+    font-family: "ProximaNova-Semibold"; }
 section a, footer a, nav a {
   color: #0088cc;
-  font-family: "Proxima Nova";
+  font-family: "ProximaNova-Regular";
   font-size: 15px;
   text-decoration: none;
   -webkit-transition: color 0.2s linear;
@@ -676,9 +670,8 @@ section a.button, footer a.button, nav a.button {
   background-color: #0088cc;
   border-radius: 3px;
   color: white;
-  font-family: "Proxima Nova";
+  font-family: "ProximaNova-Semibold";
   font-size: 14px;
-  font-weight: 600;
   padding: 10px 16px;
   -webkit-transition: background-color 0.2s ease;
   -moz-transition: background-color 0.2s ease;

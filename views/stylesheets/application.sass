@@ -6,9 +6,12 @@
 $tablet: max-width 768px 8
 $mobile: max-width 480px 4
 
-$body-font: "Proxima Nova"
-$headings-font: "Futura Std"
-$serif-font: "Merriweather"
+$body-font: "ProximaNova-Regular"
+$body-font-italic: "ProximaNova-RegularIt"
+$body-font-semibold: "ProximaNova-Semibold"
+$body-font-bold: "ProximaNova-Bold"
+$headings-font: "FuturaPTHeavy-Reg"
+$serif-font: "MerriweatherST-Italic"
 
 html
   height: 100%
@@ -91,8 +94,7 @@ nav
       color: #333
       display: inline-block
       font-family: $headings-font
-      font-size: 13px
-      font-weight: 700
+      font-size: 15px
       line-height: 72px
       margin: 0 10px
       padding: 0 10px
@@ -144,9 +146,7 @@ nav
       border: none
       color: #333
       font-family: $serif-font
-      font-weight: 400
       font-size: 36px
-      font-style: italic
       margin: 0
 
       @include media($tablet)
@@ -385,7 +385,7 @@ section, footer, nav
     color: #444
     font-family: $headings-font
     font-size: 36px
-    font-weight: 700
+    font-weight: normal
     line-height: 112px
     text-align: center
     text-transform: uppercase
@@ -402,7 +402,7 @@ section, footer, nav
     color: #01a388
     font-family: $headings-font
     font-size: 24px
-    font-weight: 700
+    font-weight: normal
     text-transform: uppercase
 
     @include media($tablet)
@@ -415,23 +415,21 @@ section, footer, nav
     color: #0088cc
     font-family: $serif-font
     font-size: 18px
-    font-style: italic
     font-weight: normal
 
   h4
     color: #666
     font-family: $headings-font
     font-size: 13px
-    font-weight: 900
+    font-weight: normal
     margin-top: 22px
     text-transform: uppercase
 
   small
     color: #666
     display: block
-    font-family: $body-font
+    font-family: $body-font-italic
     font-size: 15px
-    font-style: italic
 
   hgroup
     h1, h2, h3, h4
@@ -445,8 +443,7 @@ section, footer, nav
     margin: 22px 0
 
     strong
-      font-family: $body-font
-      font-weight: 600
+      font-family: $body-font-semibold
 
   a
     color: #0088cc
@@ -462,9 +459,8 @@ section, footer, nav
     background-color: #0088cc
     border-radius: 3px
     color: #fff
-    font-family: $body-font
+    font-family: $body-font-semibold
     font-size: 14px
-    font-weight: 600
     padding: 10px 16px
     @include transition (background-color .2s ease)
 

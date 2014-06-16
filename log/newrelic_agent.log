@@ -2661,3 +2661,15 @@
 [06/16/14 11:21:06 +0200 MacBook-Pro-van-Bram-2.local (64170)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
 [06/16/14 11:21:14 +0200 MacBook-Pro-van-Bram-2.local (64170)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
 [06/16/14 11:21:15 +0200 MacBook-Pro-van-Bram-2.local (64170)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Sinatra::NotFound
+[06/16/14 11:55:52 +0200 MacBook-Pro-van-Bram-2.local (65448)] INFO : Starting the New Relic agent in "development" environment.
+[06/16/14 11:55:52 +0200 MacBook-Pro-van-Bram-2.local (65448)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[06/16/14 11:55:52 +0200 MacBook-Pro-van-Bram-2.local (65448)] INFO : Reading configuration from config/newrelic.yml
+[06/16/14 11:55:52 +0200 MacBook-Pro-van-Bram-2.local (65448)] INFO : Environment: development
+[06/16/14 11:55:52 +0200 MacBook-Pro-van-Bram-2.local (65448)] INFO : No known dispatcher detected.
+[06/16/14 11:55:52 +0200 MacBook-Pro-van-Bram-2.local (65448)] INFO : Application: denkGroot_v2
+[06/16/14 11:55:52 +0200 MacBook-Pro-van-Bram-2.local (65448)] WARN : Agent configured not to send data in this environment.
+[06/16/14 11:55:52 +0200 MacBook-Pro-van-Bram-2.local (65448)] INFO : Installing Net instrumentation
+[06/16/14 11:55:52 +0200 MacBook-Pro-van-Bram-2.local (65448)] INFO : Installing Sinatra instrumentation
+[06/16/14 11:55:52 +0200 MacBook-Pro-van-Bram-2.local (65448)] INFO : Installing deferred Rack instrumentation
+[06/16/14 11:55:52 +0200 MacBook-Pro-van-Bram-2.local (65448)] INFO : Finished instrumentation
+[06/16/14 11:55:53 +0200 MacBook-Pro-van-Bram-2.local (65448)] INFO : Doing deferred dependency-detection before Rack startup

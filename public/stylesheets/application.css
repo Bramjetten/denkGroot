@@ -15,6 +15,9 @@ body {
 
 #contact, #services, #portfolio, #aboutus {
   padding-top: 72px; }
+  @media screen and (max-width: 480px) {
+    #contact, #services, #portfolio, #aboutus {
+      padding-top: 52px; } }
 
 .container {
   padding: 0 10px;
@@ -102,6 +105,7 @@ nav {
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
   nav ul {
+    height: 72px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
@@ -115,8 +119,14 @@ nav {
       display: table; }
     nav ul:after {
       clear: both; }
+    @media screen and (max-width: 480px) {
+      nav ul {
+        height: 52px; } }
     nav ul li {
       display: inline-block; }
+      @media screen and (max-width: 480px) {
+        nav ul li {
+          display: none; } }
     nav ul li a {
       color: #333333;
       display: inline-block;
@@ -149,169 +159,14 @@ nav {
       nav #logo {
         background-image: url("/images/logo@2x.png");
         background-size: 155px 58px; } }
-
-#homepage_slider {
-  height: 100%;
-  min-height: 100%;
-  overflow: auto;
-  position: relative; }
-  #homepage_slider section {
-    height: 100%;
-    min-height: 100%;
-    position: relative; }
-  #homepage_slider .rsNav.rsBullets {
-    bottom: 4px;
-    opacity: 0.75;
-    position: absolute;
-    text-align: center;
-    width: 100%; }
-  #homepage_slider .rsNavItem.rsBullet {
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
-    height: 10px;
-    margin: 5px;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-    width: 10px; }
-    #homepage_slider .rsNavItem.rsBullet.rsNavSelected {
-      background: rgba(0, 0, 0, 0.8);
-      height: 8px;
-      margin: 6px;
-      width: 8px; }
-  #homepage_slider #buurtlink {
-    background-color: #f0f2ef; }
-    #homepage_slider #buurtlink .content {
-      padding: 20% 5% 0 10%;
-      width: 50%; }
-    #homepage_slider #buurtlink .image {
-      height: 100%;
-      top: 0px;
-      right: 0px;
-      margin: 10% 0 0 0;
-      position: absolute;
-      width: 50%; }
-      #homepage_slider #buurtlink .image img {
-        float: left; }
-    #homepage_slider #buurtlink h1 {
-      border: none;
-      color: #4d4d4c;
-      font-family: "Futura Std";
-      font-size: 36px;
-      line-height: 36px;
-      margin: 0;
-      text-transform: uppercase; }
-    #homepage_slider #buurtlink h2 {
-      color: #4d4d4c;
-      font-family: "SkolarWeb-Italic";
-      font-size: 20px;
-      line-height: 24px;
-      margin: 0;
-      text-transform: none; }
-    #homepage_slider #buurtlink p {
-      color: #4d4d4c;
-      font-size: 15px; }
-    #homepage_slider #buurtlink .button {
-      background: none;
-      border: 2px solid #606160;
-      color: #606160;
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      -webkit-transition: all 0.2s ease;
-      -moz-transition: all 0.2s ease;
-      -ms-transition: all 0.2s ease;
-      -o-transition: all 0.2s ease;
-      transition: all 0.2s ease; }
-      #homepage_slider #buurtlink .button:hover {
-        background: #606160;
-        color: white; }
-    #homepage_slider #buurtlink .map-icon {
-      display: block;
-      height: 42px;
-      position: absolute;
-      width: 26px; }
-    #homepage_slider #buurtlink .map-icon-post {
-      background: url("/images/map_icon_post.png"); }
-    #homepage_slider #buurtlink .map-icon-offer {
-      background: url("/images/map_icon_offer.png"); }
-    #homepage_slider #buurtlink .map-icon-event {
-      background: url("/images/map_icon_event.png"); }
-    #homepage_slider #buurtlink .map-icon-house {
-      background: url("/images/map_icon_house.png"); }
-  #homepage_slider #plango {
-    background-color: #0f0733;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0f0733), color-stop(100%, #622d65));
-    background-image: -webkit-linear-gradient(bottom, #0f0733, #622d65);
-    background-image: -moz-linear-gradient(bottom, #0f0733, #622d65);
-    background-image: -ms-linear-gradient(bottom, #0f0733, #622d65);
-    background-image: -o-linear-gradient(bottom, #0f0733, #622d65);
-    background-image: linear-gradient(bottom, #0f0733, #622d65); }
-    #homepage_slider #plango .content {
-      text-align: center;
-      width: 100%;
-      z-index: 99; }
-    #homepage_slider #plango .plangopattern {
-      background: url("/images/plango_pattern.png");
-      opacity: 0.6;
-      height: 100%;
-      width: 100%; }
-    #homepage_slider #plango h1 {
-      border: none;
-      color: white;
-      font-family: "Futura Std";
-      font-size: 36px;
-      line-height: 42px;
-      margin: 0;
-      margin-top: 150px;
-      text-transform: uppercase; }
-    #homepage_slider #plango h2 {
-      color: white;
-      font-family: "SkolarWeb-Italic";
-      font-size: 20px;
-      margin: 0;
-      text-transform: none; }
-    #homepage_slider #plango .button {
-      background: none;
-      border: 2px solid white;
-      color: white;
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      -webkit-transition: all 0.2s ease;
-      -moz-transition: all 0.2s ease;
-      -ms-transition: all 0.2s ease;
-      -o-transition: all 0.2s ease;
-      transition: all 0.2s ease; }
-      #homepage_slider #plango .button:hover {
-        background: white;
-        color: #333333; }
-    #homepage_slider #plango .image-desktop, #homepage_slider #plango .image-phone, #homepage_slider #plango .image-tablet {
-      height: 100%;
-      position: absolute;
-      text-align: center;
-      width: 100%; }
-      #homepage_slider #plango .image-desktop img, #homepage_slider #plango .image-phone img, #homepage_slider #plango .image-tablet img {
-        bottom: -220px;
-        margin-top: 350px; }
-    #homepage_slider #plango .image-phone img {
-      bottom: 0px;
-      left: 80px;
-      top: auto;
-      position: absolute; }
-    #homepage_slider #plango .image-tablet img {
-      bottom: -80px;
-      left: auto;
-      right: -120px;
-      position: absolute; }
-
-@media screen and (max-width: 768px) {
-  .videoBG {
-    background: #cccccc; }
-    .videoBG video {
-      display: none !important; } }
+    @media screen and (max-width: 480px) {
+      nav #logo {
+        width: 97px;
+        background-image: url("/images/logo-small.png"); } }
+      @media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-width: 480px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-width: 480px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-width: 480px) and (min-resolution: 125dpi), only screen and (max-width: 480px) and (min-resolution: 1.3dppx) {
+        nav #logo {
+          background-image: url("/images/logo-small@2x.png");
+          background-size: 97px 36px; } }
 
 #home {
   background: transparent;
@@ -329,8 +184,10 @@ nav {
     #home .introduction h1 {
       border: none;
       color: #333333;
-      font-family: "SkolarWeb-Italic";
+      font-family: "Merriweather";
+      font-weight: 400;
       font-size: 36px;
+      font-style: italic;
       margin: 0; }
       @media screen and (max-width: 768px) {
         #home .introduction h1 {
@@ -516,6 +373,7 @@ nav {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
     .contact-form {
+      margin-top: 24px;
       display: block;
       float: left;
       margin-right: 3.57866%;
@@ -549,6 +407,7 @@ nav {
     margin-right: 0; }
   @media screen and (max-width: 480px) {
     .contact {
+      margin-bottom: 24px;
       display: block;
       float: left;
       margin-right: 7.42297%;
@@ -753,11 +612,11 @@ section h1, footer h1, nav h1 {
   text-transform: uppercase; }
   @media screen and (max-width: 768px) {
     section h1, footer h1, nav h1 {
-      font-size: 40px;
+      font-size: 32px;
       line-height: 60px; } }
   @media screen and (max-width: 480px) {
     section h1, footer h1, nav h1 {
-      font-size: 32px;
+      font-size: 28px;
       line-height: 48px; } }
 section h2, footer h2, nav h2 {
   color: #01a388;

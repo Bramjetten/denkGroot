@@ -118,11 +118,11 @@ nav {
     nav ul li {
       display: inline-block; }
     nav ul li a {
-      border-top: 2px solid transparent;
       color: #333333;
       display: inline-block;
-      font-family: "AllerDisplay-Regular";
-      font-size: 14px;
+      font-family: "Futura Std";
+      font-size: 13px;
+      font-weight: 700;
       line-height: 72px;
       margin: 0 10px;
       padding: 0 10px;
@@ -130,7 +130,6 @@ nav {
     nav ul li a[href="#home"] {
       display: none; }
     nav ul li.active a {
-      border-bottom: 2px solid #01a388;
       color: #01a388; }
     nav ul li:last-child a {
       margin-right: 0; }
@@ -199,7 +198,7 @@ nav {
     #homepage_slider #buurtlink h1 {
       border: none;
       color: #4d4d4c;
-      font-family: "AllerDisplay-Regular";
+      font-family: "Futura Std";
       font-size: 36px;
       line-height: 36px;
       margin: 0;
@@ -262,7 +261,7 @@ nav {
     #homepage_slider #plango h1 {
       border: none;
       color: white;
-      font-family: "AllerDisplay-Regular";
+      font-family: "Futura Std";
       font-size: 36px;
       line-height: 42px;
       margin: 0;
@@ -745,12 +744,13 @@ nav {
     list-style: none; }
 
 section h1, footer h1, nav h1 {
-  border-bottom: 1px dashed #e5e5e5;
-  color: #333333;
-  font-family: "SkolarBasicLt-Regular";
-  font-size: 48px;
-  font-weight: normal;
-  line-height: 80px; }
+  color: #444444;
+  font-family: "Futura Std";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 112px;
+  text-align: center;
+  text-transform: uppercase; }
   @media screen and (max-width: 768px) {
     section h1, footer h1, nav h1 {
       font-size: 40px;
@@ -761,9 +761,9 @@ section h1, footer h1, nav h1 {
       line-height: 48px; } }
 section h2, footer h2, nav h2 {
   color: #01a388;
-  font-family: "AllerDisplay-Regular";
+  font-family: "Futura Std";
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 700;
   text-transform: uppercase; }
   @media screen and (max-width: 768px) {
     section h2, footer h2, nav h2 {
@@ -773,36 +773,38 @@ section h2, footer h2, nav h2 {
       font-size: 16px; } }
 section h3, footer h3, nav h3 {
   color: #0088cc;
-  font-family: "SkolarWeb-Italic";
-  font-size: 20px;
+  font-family: "Merriweather";
+  font-size: 18px;
+  font-style: italic;
   font-weight: normal; }
 section h4, footer h4, nav h4 {
   color: #666666;
-  font-family: "AllerDisplay-Regular";
+  font-family: "Futura Std";
   font-size: 13px;
-  font-weight: normal;
+  font-weight: 900;
   margin-top: 22px;
   text-transform: uppercase; }
 section small, footer small, nav small {
   color: #666666;
   display: block;
-  font-family: "Aller-Italic";
-  font-size: 15px; }
+  font-family: "Proxima Nova";
+  font-size: 15px;
+  font-style: italic; }
 section hgroup h1, section hgroup h2, section hgroup h3, section hgroup h4, footer hgroup h1, footer hgroup h2, footer hgroup h3, footer hgroup h4, nav hgroup h1, nav hgroup h2, nav hgroup h3, nav hgroup h4 {
   margin: 0; }
 section p, footer p, nav p {
   color: #666666;
-  font-family: "Aller-Regular";
-  font-size: 14px;
+  font-family: "Proxima Nova";
+  font-size: 15px;
   line-height: 22px;
   margin: 22px 0; }
   section p strong, footer p strong, nav p strong {
-    font-family: "Aller-Bold";
-    font-weight: normal; }
+    font-family: "Proxima Nova";
+    font-weight: 600; }
 section a, footer a, nav a {
   color: #0088cc;
-  font-family: "Aller-Regular";
-  font-size: 14px;
+  font-family: "Proxima Nova";
+  font-size: 15px;
   text-decoration: none;
   -webkit-transition: color 0.2s linear;
   -moz-transition: color 0.2s linear;
@@ -815,8 +817,9 @@ section a.button, footer a.button, nav a.button {
   background-color: #0088cc;
   border-radius: 3px;
   color: white;
-  font-family: "Aller-Bold";
-  font-size: 13px;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 600;
   padding: 10px 16px;
   -webkit-transition: background-color 0.2s ease;
   -moz-transition: background-color 0.2s ease;

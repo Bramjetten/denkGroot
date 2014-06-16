@@ -6,6 +6,9 @@
 $tablet: max-width 768px 8
 $mobile: max-width 480px 4
 
+$body-font: "Proxima Nova"
+$headings-font: "Futura Std"
+
 html
   height: 100%
   min-height: 100%
@@ -74,11 +77,11 @@ nav
       display: inline-block
 
     li a
-      border-top: 2px solid transparent
       color: #333
       display: inline-block
-      font-family: "AllerDisplay-Regular"
-      font-size: 14px
+      font-family: $headings-font
+      font-size: 13px
+      font-weight: 700
       line-height: 72px
       margin: 0 10px
       padding: 0 10px
@@ -88,7 +91,6 @@ nav
       display: none
 
     li.active a
-      border-bottom: 2px solid #01a388
       color: #01a388
 
     li:last-child a
@@ -166,7 +168,7 @@ nav
     h1
       border: none
       color: #4d4d4c
-      font-family: "AllerDisplay-Regular"
+      font-family: $headings-font
       font-size: 36px
       line-height: 36px
       margin: 0
@@ -232,7 +234,7 @@ nav
     h1
       border: none
       color: #fff
-      font-family: "AllerDisplay-Regular"
+      font-family: $headings-font
       font-size: 36px
       line-height: 42px
       margin: 0
@@ -541,12 +543,13 @@ nav
 // Styles
 section, footer, nav
   h1
-    border-bottom: 1px dashed #e5e5e5
-    color: #333
-    font-family: "SkolarBasicLt-Regular"
-    font-size: 48px
-    font-weight: normal
-    line-height: 80px
+    color: #444
+    font-family: $headings-font
+    font-size: 36px
+    font-weight: 700
+    line-height: 112px
+    text-align: center
+    text-transform: uppercase
 
     @include media($tablet)
       font-size: 40px
@@ -558,9 +561,9 @@ section, footer, nav
 
   h2
     color: #01a388
-    font-family: "AllerDisplay-Regular"
+    font-family: $headings-font
     font-size: 24px
-    font-weight: normal
+    font-weight: 700
     text-transform: uppercase
 
     @include media($tablet)
@@ -571,23 +574,25 @@ section, footer, nav
 
   h3
     color: #0088cc
-    font-family: "SkolarWeb-Italic"
-    font-size: 20px
+    font-family: "Merriweather"
+    font-size: 18px
+    font-style: italic
     font-weight: normal
 
   h4
     color: #666
-    font-family: "AllerDisplay-Regular"
+    font-family: $headings-font
     font-size: 13px
-    font-weight: normal
+    font-weight: 900
     margin-top: 22px
     text-transform: uppercase
 
   small
     color: #666
     display: block
-    font-family: "Aller-Italic"
+    font-family: $body-font
     font-size: 15px
+    font-style: italic
 
   hgroup
     h1, h2, h3, h4
@@ -595,19 +600,19 @@ section, footer, nav
 
   p
     color: #666
-    font-family: "Aller-Regular"
-    font-size: 14px
+    font-family: $body-font
+    font-size: 15px
     line-height: 22px
     margin: 22px 0
 
     strong
-      font-family: "Aller-Bold"
-      font-weight: normal
+      font-family: $body-font
+      font-weight: 600
 
   a
     color: #0088cc
-    font-family: "Aller-Regular"
-    font-size: 14px
+    font-family: $body-font
+    font-size: 15px
     text-decoration: none
     @include transition (color .2s linear)
 
@@ -618,8 +623,9 @@ section, footer, nav
     background-color: #0088cc
     border-radius: 3px
     color: #fff
-    font-family: "Aller-Bold"
-    font-size: 13px
+    font-family: $body-font
+    font-size: 14px
+    font-weight: 600
     padding: 10px 16px
     @include transition (background-color .2s ease)
 

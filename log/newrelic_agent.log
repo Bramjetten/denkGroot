@@ -2943,3 +2943,15 @@
 [06/19/14 09:44:00 +0200 MacBook-Pro-van-Bram-2.local (91052)] INFO : Installing deferred Rack instrumentation
 [06/19/14 09:44:00 +0200 MacBook-Pro-van-Bram-2.local (91052)] INFO : Finished instrumentation
 [06/19/14 09:44:01 +0200 MacBook-Pro-van-Bram-2.local (91052)] INFO : Doing deferred dependency-detection before Rack startup
+[07/11/14 13:10:34 +0200 MacBook-Pro-van-Bram-2.local (96206)] INFO : Starting the New Relic agent in "development" environment.
+[07/11/14 13:10:34 +0200 MacBook-Pro-van-Bram-2.local (96206)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[07/11/14 13:10:34 +0200 MacBook-Pro-van-Bram-2.local (96206)] INFO : Reading configuration from config/newrelic.yml
+[07/11/14 13:10:34 +0200 MacBook-Pro-van-Bram-2.local (96206)] INFO : Environment: development
+[07/11/14 13:10:34 +0200 MacBook-Pro-van-Bram-2.local (96206)] INFO : No known dispatcher detected.
+[07/11/14 13:10:34 +0200 MacBook-Pro-van-Bram-2.local (96206)] INFO : Application: denkGroot_v2
+[07/11/14 13:10:34 +0200 MacBook-Pro-van-Bram-2.local (96206)] WARN : Agent configured not to send data in this environment.
+[07/11/14 13:10:34 +0200 MacBook-Pro-van-Bram-2.local (96206)] INFO : Installing Net instrumentation
+[07/11/14 13:10:34 +0200 MacBook-Pro-van-Bram-2.local (96206)] INFO : Installing Sinatra instrumentation
+[07/11/14 13:10:34 +0200 MacBook-Pro-van-Bram-2.local (96206)] INFO : Installing deferred Rack instrumentation
+[07/11/14 13:10:34 +0200 MacBook-Pro-van-Bram-2.local (96206)] INFO : Finished instrumentation
+[07/11/14 13:10:34 +0200 MacBook-Pro-van-Bram-2.local (96206)] INFO : Doing deferred dependency-detection before Rack startup
